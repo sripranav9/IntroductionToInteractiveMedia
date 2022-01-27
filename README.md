@@ -11,3 +11,9 @@ Here is a **word** that is **Bold**.
 
 ## Here you can find some intital changes to README.
 ### I am now aware of GitHub
+
+#### Difficulties:
+1. Difficulty #1
+1. Difficulty #1
+1. Difficulty #1
+1. Difficulty #1
