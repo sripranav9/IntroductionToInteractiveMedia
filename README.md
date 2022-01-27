@@ -9,8 +9,9 @@ This should be part of the second now.
 Here is an *italics* word
 Here is a **word** that is **Bold**.
 
-## Here you can find some intital changes to README.
-### I am now aware of GitHub
+## Picture of my Homework
+
+![my_homework](picture.jpg)
 
 #### Difficulties:
 1. Difficulty #1
