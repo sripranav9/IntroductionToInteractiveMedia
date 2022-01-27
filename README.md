@@ -11,7 +11,7 @@ Here is a **word** that is **Bold**.
 
 ## Picture of my Homework
 
-![my_homework](pngegg.jpg)
+![my_homework](pngegg.png)
 
 #### Difficulties:
 1. Difficulty #1
