@@ -14,6 +14,6 @@ Here is a **word** that is **Bold**.
 
 #### Difficulties:
 1. Difficulty #1
-1. Difficulty #1
-1. Difficulty #1
-1. Difficulty #1
+1. Difficulty #2
+1. Difficulty #3
+1. Difficulty #4
