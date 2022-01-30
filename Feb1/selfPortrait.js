@@ -3,7 +3,7 @@ function setup() {
   background(215);
   
   fill(250, 220, 175)
-  //rectangle
+  //rectangle for hair skin
   rect(150, 168, 99, -20)
   
   //chin or bottom part of the face
@@ -32,6 +32,9 @@ function setup() {
   //nose
   fill(250, 220, 175);
   arc(200, 200, 10, 10, 0, PI, OPEN);
+  
+  //mouth 
+  arc(200, 220, 25, 25, radians(30), radians(150), OPEN);
   
 }
 
