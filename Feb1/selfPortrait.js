@@ -6,7 +6,17 @@ function setup() {
   //rectangle for hair skin
   rect(150, 168, 99, -20)
   
+  //rectangle for neck
+  rect(187, 185, 25, 80);
+  
+  //rectangle for t-shirt
+  fill(171, 214, 230)
+  rect(133, 261 ,28, 42) //his right hand
+  rect(239, 261 ,28, 42) // his left hand
+  rect(160, 261, 80, 95)
+  
   //chin or bottom part of the face
+  fill(250, 220, 175)
   arc(200, 170, //center of the arc
       100, 150, //width and height 
       radians(360), radians(180) ) // start and stop angle
@@ -35,6 +45,10 @@ function setup() {
   
   //mouth 
   arc(200, 220, 25, 25, radians(30), radians(150), OPEN);
+  
+  //hands 
+  rect(140, 303, 10, 40) //his right hand
+  rect(251, 303, 10, 40) // his left hand
   
 }
 
