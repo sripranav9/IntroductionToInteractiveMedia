@@ -3,5 +3,7 @@
 ## Prof. Michael Shiloh
 
 This is a catalogue of all the resources during my journey in this course. 
-![wallE](https://user-images.githubusercontent.com/92122776/151948533-40af8a01-2501-4494-bc19-f391736ca71c.jpg = 300x300)
+
+
+![wallE](https://user-images.githubusercontent.com/92122776/151948533-40af8a01-2501-4494-bc19-f391736ca71c.jpg)
 
