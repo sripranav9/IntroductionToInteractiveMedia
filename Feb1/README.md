@@ -1,8 +1,10 @@
 # Interactive Media (Prof. Michael Shiloh)
-## Assignment 1 (February 1)
-## Self Portrait
+### Assignment 1 (February 1)
+### Self Portrait
 
 ![selfPortrait](https://user-images.githubusercontent.com/92122776/151812679-1c095272-fd2a-474a-9e38-0c4ec73c2c13.png)
+
+#### Code:
 
 ````
 function setup() {
