@@ -1,6 +1,6 @@
 # Interactive Media (Prof. Michael Shiloh)
 ### Assignment 1 (February 1)
-### Self Portrait
+### Self Portrait:
 
 ![selfPortrait](https://user-images.githubusercontent.com/92122776/151812679-1c095272-fd2a-474a-9e38-0c4ec73c2c13.png)
 
@@ -66,6 +66,10 @@ function setup() {
 // }
 
 ````
+
+#### Interesting things found:
+1. I could check the RGB ratios of a particular color that I wish to have and convert those percentages with respect to scale of 255 to get the required color. 
+
 
 #### Challenges Faced:
 1. I have estimated the canvas size incorrectly and now it is hard to change the canvas size alone as it changes its dimensions with respect to (0,0) co-ordinates. 
