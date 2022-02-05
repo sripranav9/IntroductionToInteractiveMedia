@@ -1,3 +1,7 @@
+# Interactive Media (Prof. Michael Shiloh)
+### Assignment 2 (February 8)
+#### Computer Art:
+
 
 #### Code:
 
