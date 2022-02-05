@@ -2,7 +2,7 @@
 ### Assignment 2 (February 8)
 #### Abstract Computer Art:
 
-<img src="https://user-images.githubusercontent.com/92122776/152655963-dc207433-747a-48d9-91fb-fca0ddf32843.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/92122776/152657119-d8e1f207-a6ed-46f6-87da-cf66b58b7911.png" width=40% height=40%>
+<img src="https://user-images.githubusercontent.com/92122776/152655963-dc207433-747a-48d9-91fb-fca0ddf32843.png" width=50% height=50%> | <img src="https://user-images.githubusercontent.com/92122776/152657119-d8e1f207-a6ed-46f6-87da-cf66b58b7911.png" width=15% height=15%>
 
 
 #### Code:
