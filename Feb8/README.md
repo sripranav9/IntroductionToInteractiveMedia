@@ -1,6 +1,6 @@
 # Interactive Media (Prof. Michael Shiloh)
 ### Assignment 2 (February 8)
-#### Computer Art:
+#### Abstract Computer Art:
 
 <img src="https://user-images.githubusercontent.com/92122776/152655963-dc207433-747a-48d9-91fb-fca0ddf32843.png" width=50% height=50%>
 
