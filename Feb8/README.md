@@ -115,7 +115,16 @@ function setup() {
 
 1. I intially started with creating the static elements first that will not change at all. I have used the functions ````rect()```` ````circle()```` ````arc()```` ````line()```` mainly here. 
 2. I have then concentrated on the randomized elements that keep changing after every run sequence. The main functions used here apart from the ones mentioned above are: ````random()```` ````stroke()````. I have also employed ````for()```` loops for every randomised pattern I wanted to present. Some of the most used random numbers have been stored in variables: ````randomOne```` and ````randomTwo```` other than some of the others used in the program.
-3. The random numbers have been used in such a way that the design will remain constant except for the minor changes in the background and everything is scaled to either 180 degrees or 90 degrees. The for loops have been used in the similar way as well, where the counter is not the default and changed accordingly to achieve the desired results.
+3. The random numbers have been used in such a way that the design will remain constant except for the minor changes in the background and everything is scaled to either 180 degrees or 90 degrees. The for loops have been used in the similar way as well, where the counter is not the default and changed accordingly to achieve the desired results. Here's a snippet from the code to explain this:
+````
+  let randThree = random(2, 5);
+  for (let i = 250; i < 360; i += randThree) //the counter is a random number
+  {
+    let randomTwo = random(220); //randomTwo is a variable for another random number declared above
+    stroke(60);
+    line(i, 0, (i += randThree), 400); //line's origin and dimensions given by random variables
+  }
+  ````
 
 #### Problems:
 
