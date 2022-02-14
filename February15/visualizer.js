@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  background(70); //create the background
+  background(255); //create the background
       
   //create objects of the class
   obj1 = new Visualizer(200,200);
@@ -30,7 +30,7 @@ function draw() {
   //to make sure that the visualizer doesn't occupy entire screen
   //here we make an arc and increase the width of the circle
   noFill();
-  stroke(70);
+  stroke(255);
   strokeWeight(200);
   circle(200,200,500);
 }
