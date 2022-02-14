@@ -2,7 +2,7 @@
 ### Assignment 3 (February 15)
 ####  Object Oriented Programming- Art (Visualizer):
 
-https://user-images.githubusercontent.com/92122776/153937681-305d4552-76ad-4e75-bf4e-5c18795e8ffb.mov
+https://user-images.githubusercontent.com/92122776/153942055-16c6857f-79ca-4f02-b456-be6341506bc5.mov
 
 #### Process:
 1. This program is basically representing an audio visualizer. The moving rectangle (regulator) is always in the centre and the object is called once to create a static regulator at the beginning.
