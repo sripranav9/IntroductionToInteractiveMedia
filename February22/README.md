@@ -29,6 +29,6 @@ Once this returns the average value, this is the fundamental input used to graph
 4. For every iteration in the for loop, there is an increment to print the rectangles as bars representing a horizontal bar graph at the end. 
 
 #### Problems and learnings:
-1. The ```loadTable()````function creates a p5.table whose columns can be accessed using the function````getColumn()````.
+1. The ````loadTable()```` function creates a p5.table whose columns can be accessed using the function ````getColumn()````.
 2. Some of the new functions I learnt are: ````getRowCount()```` ````getColumn()```` ````split()````.
 3. The ````translate()```` function has saved my day.
