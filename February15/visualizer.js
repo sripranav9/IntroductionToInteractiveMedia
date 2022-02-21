@@ -26,9 +26,9 @@ function draw() {
   obj1.staticRegulator();
   obj1.rotateRegulator();
 
-  //****always at the end of draw function
-  //to make sure that the visualizer doesn't occupy entire screen
-  //here we make an arc and increase the width of the circle
+  /*always at the end of draw function
+  to make sure that the visualizer doesn't occupy entire screen
+  here we make an arc and increase the width of the circle*/
   noFill();
   stroke(255);
   strokeWeight(200);
@@ -91,14 +91,5 @@ class Visualizer
     rect(-5,-5,10,60); //I chose 5 because that's exactly half of the width - 10 as chosen here
     pop();
   }// end of rotateRegulator
-
-  // star(x,y)
-  // {
-  //   this.starX = x;
-  //   this.starY = y;
-  //   rect(this.starX,this.starY,50,50);
-  //   rect(this.starX,this.starY,50,50);
-  //   rotate(radians(45));
-  // }
   
 } // end of class 
