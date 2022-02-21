@@ -30,5 +30,5 @@ Once this returns the average value, this is the fundamental input used to graph
 
 #### Problems and learnings:
 1. The ```loadTable()```` function creates a p5.table whose columns can be accessed using the function ````getColumn()````.
-2. Some of the new functions I learnt are: ````getRowCount()```` ````getColumn()```` ````split()```.
+2. Some of the new functions I learnt are: ````getRowCount()```` ````getColumn()```` ````split()````.
 3. The ````translate()```` function has saved my day.
