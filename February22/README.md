@@ -2,12 +2,13 @@
 #### Data Visualization:
 
 The horizontal bar graph represents my respiratory rates over a few months. I have used the data from the Health app and exported it in .csv format to visualize the data. The graph represents the respiratory rates above and below the average respiratory rate in different colors. 
+
 _Some data which had no values were removed from the file for the purpose of this assignment._
 
 <img src="https://user-images.githubusercontent.com/92122776/155027778-52a5a968-e69e-4b59-919a-6c7cd8ed96e0.png" width=50% height=50%> 
 
 #### Process:
-1. This is a visualization of my respiratory data since 29th September 2021, until date. I have exported the data from my health app through a .csv file.
+1. This is a visualization of my respiratory data since 29th September 2021, until date. I have exported the data from my health app through a csv file format.
 2. Once imported, I deleted the columns where there was no data (I did not wear the watch then perhaps).
 3. Once uploaded, I have calculated the average respiratory rate using a function passing an array (of a column) and the total number of rows as arguments.
 ````
