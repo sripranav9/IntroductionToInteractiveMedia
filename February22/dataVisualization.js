@@ -33,13 +33,15 @@ function draw() {
 
   //white box to contain legend
   fill(220);
+  //these numbers 4.5 and 8 are chosen in such a way that 
+  //it does not coincide with the bars.
   rect(0, 0, width / 4.5, height / 8);
   //Dark Gray box of the legend denoting Low Resp. Rate
   fill(70);
-  rect(5, 7, 15, 15);
+  rect(5, 7, 15, 15); //cautiously chosen numbers to prevent overlapping
   //Light gray box of the legend denoting High Resp. Rate
   fill(130);
-  rect(5, 28, 15, 15);
+  rect(5, 28, 15, 15); //cautiously chosen numbers to prevent overlapping
   //Text Font to describe colors in legend
   fill(0);
   textSize(8); //set the text size
