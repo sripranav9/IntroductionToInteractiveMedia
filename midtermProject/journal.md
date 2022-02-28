@@ -1,6 +1,6 @@
-## Introduction to Interactive Media
-## New York University Abu Dhabi 
-### Mid-Term Project:
+# Journal
+## Mid-Term Project:
+### Introduction to Interactive Media | New York University Abu Dhabi
 
 #### Initial Concept:
 The idea is to create something that involves an object hitting some other objects (maybe in stacks) and the physics involved in the latter part. The user will score points based on the number of objects that have fallen out of place. The game will involve a single user. 
