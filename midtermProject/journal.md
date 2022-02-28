@@ -11,8 +11,9 @@ The idea is to create something that involves an object hitting some other objec
 #### How I solved it:
 So this was when I researched about this and I found a wonderful and really helpful library called [Matter.js](https://brm.io/matter-js/docs/).
 - It did take me quite sometime to go through the documentation and several videos on this module for understanding a wide variety of functions provided by this library.
-- For this library to be imported, I have copied and pasted this link in the ````index.html````. It should be written as follows (line 6):
- <img src="https://user-images.githubusercontent.com/92122776/156059163-98edbd31-0222-45a6-a444-30a5d7c5777b.png" width=50% height=50%>
+- For this library to be imported, I have copied and pasted this: ````<script src="https://unpkg.com/matter-js@0.18.0/build/matter.min.js"></script> ```` in the ````index.html```` file on [p5.js](https://editor.p5js.org). It should be written as follows (line 6):
+
+<img src="https://user-images.githubusercontent.com/92122776/156059163-98edbd31-0222-45a6-a444-30a5d7c5777b.png" width=50% height=50%>
  
 - This will let us use the library [Matter.js](https://brm.io/matter-js/docs/) in our program ````sketch.js````.
 - Using the functions provided by this library, I have implemented the following code.
