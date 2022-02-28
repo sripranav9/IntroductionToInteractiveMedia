@@ -1,7 +1,5 @@
-## Introduction to Interactive Media
-## New York Univeristy Abu Dhabi
-
-### Mid-Term Project:
+# Mid-Term Project
+## Introduction to Interactive Media | New York Univeristy Abu Dhabi
 
 #### Journal:
 I have documented my intital concept, complications, and solutions in a [journal](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/midtermProject/journal.md).
