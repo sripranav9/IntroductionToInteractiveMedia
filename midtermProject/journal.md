@@ -3,7 +3,7 @@
 ### Mid-Term Project:
 
 #### Initial Concept:
-The idea is to create something that involves an object hitting some other objects (maybe in stacks) and the physics ivolved in the latter part. The user will score points based on the number of objects that have fallen out of place. The game will involve a single user. 
+The idea is to create something that involves an object hitting some other objects (maybe in stacks) and the physics involved in the latter part. The user will score points based on the number of objects that have fallen out of place. The game will involve a single user. 
 
 #### Most unknown and complicated part of the program:
 - The biggest question I had in my mind was: How do I make the objects act naturally when they interact with another object? Basically, how do I code the physics of when an object interacts with another object? Let us consider these objects as bricks for now. If two bricks collide, how do I make them interact in a natural way?
