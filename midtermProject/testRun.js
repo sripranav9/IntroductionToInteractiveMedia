@@ -11,28 +11,41 @@ let world, engine;
 
 //Declare a class of Ground
 class Ground {
+  //the constructor creates a rectangle, and adds a body to the world.
   constructor(x, y, wdth, hght) {
     this.body = Matter.Bodies.rectangle(x, y, wdth, hght);
     Matter.World.add(world, this.body);
+    
+    //initialises the width and height of the body
     this.wdth = wdth; //wdth is the width
     this.hght = hght; //hght is the height
+    
+    //when there is gravity, the colleciton of bodies just fall
+    //But, we want to the ground to stay static or in its place. 
     this.body.isStatic = true;
   }
 
+  //well, the Body is created. How do I show it on
+  //the screen? This function shows the body on the screen
   show() {
+    //the position and angle are kept constant
     const pos = this.body.position;
     const angle = this.body.angle;
-    push();
+    push(); //remember I used translate now
     translate(pos.x, pos.y);
     rotate(angle);
     fill(255);
-    rectMode(CENTER);
+    //this is done so that the arguemnts of the rect function
+    //map to the center of the rectangle now, and not the left
+    //corner how its usually done
+    rectMode(CENTER); 
     rect(0, 0, this.wdth, this.hght);
-    pop();
+    pop(); //recall where I used translate?! Forget that
   }
 }
 
-//Declare a class of Bricks
+//Declare a class of Bricks:
+//This class is extremely similar to the Ground Class.
 class Brick {
   constructor(x, y, wdth, hght) {
     this.body = Matter.Bodies.rectangle(x, y, wdth, hght);
