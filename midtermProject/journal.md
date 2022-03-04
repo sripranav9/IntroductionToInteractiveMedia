@@ -2,6 +2,8 @@
 ## Mid-Term Project:
 ### Introduction to Interactive Media | New York University Abu Dhabi
 
+#### Date: 28 Feb 2022
+
 #### Initial Concept:
 The idea is to create something that involves an object hitting some other objects (maybe in stacks) and the physics involved in the latter part. The user will score points based on the number of objects that have fallen out of place. The game will involve a single user. 
 
@@ -30,6 +32,15 @@ https://user-images.githubusercontent.com/92122776/156060827-9290233b-fd45-4c01-
 https://user-images.githubusercontent.com/92122776/156061681-405fa561-63af-4b86-b2ba-e8f650b42f30.mp4
 
 - Now we can see that the objects are exactly following the laws of physics when it comes to interacting with other dynamic and static objects. 
+
+
+#### Date: 03 March 2022
+
+#### Problems I faced: 
+- Matter.js is an amazing library. It is a very powerful resource to create physics engines in p5.js. However, to collaborate what we learnt in class with Matter.js looks like a hassle. 
+- For example: I don't see how to use the ````rect()```` function without using the ````Matter.Bodies.rectangle()```` function. 
+- Hence, it needs a lot of time for me to go through the documentation, even if I am going to revamp my idea now, I am sure this will be a learning and not just an ambitious attempt. 
+- I will now brainstorm for more ideas, which may or may not involve the above mentioned ideas.
 
 #### References:
 
