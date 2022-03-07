@@ -33,6 +33,9 @@ https://user-images.githubusercontent.com/92122776/156061681-405fa561-63af-4b86-
 
 - Now we can see that the objects are exactly following the laws of physics when it comes to interacting with other dynamic and static objects. 
 
+#### References:
+
+[Matter.js](https://brm.io/matter-js/) : Matter.js is a 2D physics engine for the web.
 
 #### Date: 03 March 2022
 
@@ -42,6 +45,22 @@ https://user-images.githubusercontent.com/92122776/156061681-405fa561-63af-4b86-
 - Hence, it needs a lot of time for me to go through the documentation, even if I am going to revamp my idea now, I am sure this will be a learning and not just an ambitious attempt. 
 - I will now brainstorm for more ideas, which may or may not involve the above mentioned ideas.
 
-#### References:
+#### Date: 07 March 2022
 
-[Matter.js](https://brm.io/matter-js/) : Matter.js is a 2D physics engine for the web.
+#### Concept:
+I use [monkeytype](https://monkeytype.com) a lot. This is has really improved my typing speed. So inspired from MonkeyType, I wanted to make a game that can improve the user's speed in typing by practicing with random words generated on the screen. The user must be able to time his test and should be able to compare it with other tests he has given at that time. The good part here is: Users can compete with themselves or they can compete with their friends which makes it a 1 or 1+ player game. 
+
+#### Sources I found:
+I have a useful resource in the path am thinking the game should be in. It has several implementations that I learnt a lot from, and found them useful. The GitHub link for the resource is [here](https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js ).
+
+#### Problems, complicated parts, and solutions:
+- I want the test to be a randomized worded test. Should I import the words? How do I do that? Should I store them in arrays? or CSV files?
+- I have then created a CSV file with random words in the English language using this [website](https://onlinerandomtools.com/generate-random-csv). It just asked me the number of rows and columns, and gave me a CSV file. It might be useful for our future projects. Using this, I have preloaded the CSV file as ````words.csv```` into the ````sketch.js````. 
+- Since I wanted to refer to the class from the sketch mentioned above, I had a problem with defining the ````mouseClicked()```` function, but turns out it was already pre-defined and I just had to add the code to the same function. Since the class requires several functions, those functions needed to be imported as well. The class ````Switch```` I took inspiration from is for the toggles of various uses as presented. 
+- Checklist:
+ - Inspired from ````Switch```` class and necessary functions for the game to be more user friendly and interactive. 
+ - Add a ````welcomeScreen()````.
+ - Import the ````words.csv```` file and generate random words as and when required. 
+ - Let the Default test be the alphabet without spaces and the test randomizes upon user's choice. 
+ - Add an image.
+ - Add sound(s) when the game exactly begins. 
