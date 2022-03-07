@@ -58,9 +58,9 @@ I have a useful resource in the path am thinking the game should be in. It has s
 - I have then created a CSV file with random words in the English language using this [website](https://onlinerandomtools.com/generate-random-csv). It just asked me the number of rows and columns, and gave me a CSV file. It might be useful for our future projects. Using this, I have preloaded the CSV file as ````words.csv```` into the ````sketch.js````. 
 - Since I wanted to refer to the class from the sketch mentioned above, I had a problem with defining the ````mouseClicked()```` function, but turns out it was already pre-defined and I just had to add the code to the same function. Since the class requires several functions, those functions needed to be imported as well. The class ````Switch```` I took inspiration from is for the toggles of various uses as presented. 
 - Checklist:
- - Inspired from ````Switch```` class and necessary functions for the game to be more user friendly and interactive. 
- - Add a ````welcomeScreen()````.
- - Import the ````words.csv```` file and generate random words as and when required. 
- - Let the Default test be the alphabet without spaces and the test randomizes upon user's choice. 
- - Add an image.
- - Add sound(s) when the game exactly begins. 
+  - Inspired from ````Switch```` class and necessary functions for the game to be more user friendly and interactive. 
+  - Add a ````welcomeScreen()````.
+  - Import the ````words.csv```` file and generate random words as and when required. 
+  - Let the Default test be the alphabet without spaces and the test randomizes upon user's choice. 
+  - Add an image.
+  - Add sound(s) when the game exactly begins. 
