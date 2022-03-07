@@ -44,7 +44,10 @@ The ````theme```` switch changes the theme between light and dark modes as per t
 I have documented my intital concept, complications, and solutions in a [journal](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/midtermProject/journal.md).
 #### p5.js Sketch:
 https://editor.p5js.org/sri.pranav/sketches/MwdQ82b5j
+
 #### References:
 GitHub code for Switch class: https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js
+
 Generating a CSV file of random words: https://onlinerandomtools.com/generate-random-csv 
-Sound in th beginning of the game: https://elements.envato.com/cartoon-katie-saying-lets-begin-2SDCUFJ 
+
+Sound in the beginning of the game: https://elements.envato.com/cartoon-katie-saying-lets-begin-2SDCUFJ 
