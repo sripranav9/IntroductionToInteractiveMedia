@@ -1,12 +1,25 @@
-# Mid-Term Project
-## Introduction to Interactive Media | New York Univeristy Abu Dhabi
+# Mid-Term Project | Introduction to Interactive Media
+## IM-UH 1010 | New York Univeristy Abu Dhabi
+# SpeedoType
 
+### SpeedoType:
+SpeedoType is a minimalistic and customisable typing website. It can save the progress of the user(s) where they can compete with themselves to improve their typing speed. As a college student, I feel speed typing is something everyone should be able to inculcate to efficiently manage the college workload. SpeedoType also has customizable themes which the user can set based on light or dark surroundings upon their choice. The user is intitally given a test of the English alphabet which later can be changed to a randomized 12 word combination upon the user's choice. 
+
+
+The game starts with a welcome screen displaying a set of instructions for the player(s). The user is encouraged to read the instructions carefully before proceeding.
+
+
+
+
+
+
+
+
+
+
+### Other useful links:
 #### Journal:
 I have documented my intital concept, complications, and solutions in a [journal](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/midtermProject/journal.md).
-
-#### Intital Code to solve the complications:
-- You can find the [intital code](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/midtermProject/testRun.js) I have done to ensure I have an efficient solution to the problem I was facing.
-- Here are a few [videos](https://github.com/sripranav9/IntroductionToInteractiveMedia/blob/main/midtermProject/journal.md#code-implemention) of how the program runs.
 
 #### References:
 
