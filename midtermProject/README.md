@@ -33,10 +33,10 @@ The ````theme```` switch changes the theme between light and dark modes as per t
 
   
 ### User Centered Design:
+- All the inputs, on-screen texts, and images are placed on the ````cavas```` using the in-built ````width```` and ````height```` variables in p5.js . In fact, the Canvas itself is made using the width and height of the screen of that particular device: using the functions ````windowWidth```` and ````windowHeight````. This will ensure- whatever PC/ Mac of any display size and resolution, the user will be able to see the texts with respect to their screen. 
 - The user can choose from a variety of options and choose one that's best fit for them. 
 - The green and red colors are chosen to give the visual representation and better cognitive processing of the user to comprehend the error. 
 - The font is legible, and spatially arranged to make it less clumsy for the user.
-- All the inputs, on-screen texts, and images are placed on the ````cavas```` using the in-built ````width```` and ````height```` variables in p5.js . In fact, the Canvas itself is made using the width and height of the screen of that particular device: using the functions ````windowWidth```` and ````windowHeight````. This will ensure- whatever PC/ Mac of any display size and resolution, the user will be able to see the texts with respect to their screen. 
 
 
 ### Other useful links:
