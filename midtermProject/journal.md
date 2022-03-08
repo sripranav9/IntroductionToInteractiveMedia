@@ -2,7 +2,7 @@
 ## Mid-Term Project:
 ### Introduction to Interactive Media | New York University Abu Dhabi
 
-#### Date: 28 Feb 2022
+### Date: 28 Feb 2022
 
 #### Initial Concept:
 The idea is to create something that involves an object hitting some other objects (maybe in stacks) and the physics involved in the latter part. The user will score points based on the number of objects that have fallen out of place. The game will involve a single user. 
@@ -37,7 +37,7 @@ https://user-images.githubusercontent.com/92122776/156061681-405fa561-63af-4b86-
 
 [Matter.js](https://brm.io/matter-js/) : Matter.js is a 2D physics engine for the web.
 
-#### Date: 03 March 2022
+### Date: 03 March 2022
 
 #### Problems I faced: 
 - Matter.js is an amazing library. It is a very powerful resource to create physics engines in p5.js. However, to collaborate what we learnt in class with Matter.js looks like a hassle. 
@@ -45,7 +45,7 @@ https://user-images.githubusercontent.com/92122776/156061681-405fa561-63af-4b86-
 - Hence, it needs a lot of time for me to go through the documentation, even if I am going to revamp my idea now, I am sure this will be a learning and not just an ambitious attempt. 
 - I will now brainstorm for more ideas, which may or may not involve the above mentioned ideas.
 
-#### Date: 07 March 2022
+### Date: 07 March 2022
 
 #### Concept:
 I use [monkeytype](https://monkeytype.com) a lot. This is has really improved my typing speed. So inspired from MonkeyType, I wanted to make a game that can improve the user's speed in typing by practicing with random words generated on the screen. The user must be able to time his test and should be able to compare it with other tests he has given at that time. The good part here is: Users can compete with themselves or they can compete with their friends which makes it a 1 or 1+ player game. 
