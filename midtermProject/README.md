@@ -38,6 +38,29 @@ The ````theme```` switch changes the theme between light and dark modes as per t
 - The green and red colors are chosen to give the visual representation and better cognitive processing of the user to comprehend the error. 
 - The font is legible, and spatially arranged to make it less clumsy for the user.
 
+### User Testing and Feedback:
+- I have created a [Full-screen Version](https://editor.p5js.org/sri.pranav/full/MwdQ82b5j) of the game, and shared it with some of my friends without saying anything about the game itself. 
+- One annoying thing from the user's end was that the program expects a space even after the last word. This was happening because I was adding a space after taking each word from the array and hence, even for the last word.
+````
+for (let i = 0; i < lineOfWords.length; i++) {
+    temp += lineOfWords[i] + " ";
+}
+````
+
+The solution to this was pretty simple, I just had to check when the last word was being added, and then NOT add a space after adding the last word.
+````
+for (let i = 0; i < lineOfWords.length; i++) {
+    //this if loop is to ensure that there is no space 
+    //at the end of the last word
+    if (i == (lineOfWords.length-1)) { 
+      temp += lineOfWords[i];
+    }
+    else {
+      temp += lineOfWords[i] + " ";
+    }
+}
+````
+- On a positive note, users loved how the game's instructions, text, and image align with the screen irrespective of the display size of the machine they are using. As iterated earlier, this is because the program implements all the functions related to these using the in-built ````height```` and ````width```` variables.
 
 ### Other useful links:
 #### Journal:
