@@ -61,6 +61,7 @@ for (let i = 0; i < lineOfWords.length; i++) {
 }
 ````
 - On a positive note, users loved how the game's instructions, text, and image align with the screen irrespective of the display size of the machine they are using. As iterated earlier, this is because the program implements all the functions related to these using the in-built ````height```` and ````width```` variables.
+- Users have also loved the switch toggle feedback and attention to detail, as they cruise their mouse over the toggle, the toggle changes its color to a lighter or darker version compared to its color based on the theme to show that the cursor is actually over the toggle. 
 
 ### Other useful links:
 #### Journal:
