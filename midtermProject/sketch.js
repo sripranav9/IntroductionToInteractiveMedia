@@ -8,10 +8,17 @@
 //=====================================================
 
 //switches
-var randomSwitch,
+let randomSwitch,
   smoothSwitch,
   restartSwitch,
   themeSwitch,
+  score = [Array(5), Array(5)], //representation of the score
+  //declaration of other variables and arrays
+  //that will be used later in this program
+  scoreIdx = 0,
+  //booleans
+  won = false,
+  lost = false,
   //strings and arrays
   typed = [],
   //this will be displayed when user chooses
@@ -20,16 +27,6 @@ var randomSwitch,
   //our main words are stored in test, for now, we assign
   //the test0 to it to start with.
   test = test0,
-  score = [Array(5), Array(5)], //representation of the score
-  //declaration of other variables and arrays
-  //that will be used later in this program
-  scoreIdx = 0,
-  // egg = [],
-  // best = Infinity,
-  // bestBadge = "",
-  //booleans
-  won = false,
-  lost = false,
   //progress and time
   reach = 0,
   time = 0,
@@ -51,7 +48,7 @@ let screenNumber;
 //if its 0, its the welcome screen, if its 1, its the game.
 
 //This class is used for the toggles (in the game)
-//I came across this particular class while doing some research 
+//I came across this particular class while doing some research
 //and really wanted the user to have choice with the rangle of toggles
 //which further improves interactivity.
 class Switch {
@@ -60,45 +57,46 @@ class Switch {
     this.on = false;
     this.r = 8; //this is to prevent hardcoding the number 8 everytime
     //This also reminds me of Daniel Shiffman's implementations
-    
+
     this.x = 0 + marg + this.r * 2; //0 is not required but it is
     //written to signify that it was for the purpose that its relative
     //to the screen.
-    
+
     this.y = height - marg - this.r * (1 + 3.5 * idx); //similar to x
-    
-    this.x_ = this.x - this.r; //this is where the toggle's 
+
+    this.x_ = this.x - this.r; //this is where the toggle's
     //initial OR OFF position is
 
     this.x__ = this.x_;
     //this is declared for usage in smooth toggle
-    
+
     this.pct = 0; //for correct and wrong values
   }
-  
+
   //checks if the mouse on the screen is over a certain point or in
   //the area of parameters given in the function, this will be used
   //in other functions below.
   mouseOver() {
-    if (dist(mouseX, mouseY, this.x__, this.y) <= this.r) { 
+    if (dist(mouseX, mouseY, this.x__, this.y) <= this.r) {
       return true;
     }
     return false; //it automatically means, ELSE do this
   }
-  
+
   toggle() {
     //if the toggle is already ON, turn it OFF
     if (this.on) {
       this.on = false;
-    } else { //else, turn the toggle ON since its OFF
+    } else {
+      //else, turn the toggle ON since its OFF
       this.on = true;
     }
 
     this.move(); //the black circle to move
-    
-    //if these are changed, bring the test back to the start 
+
+    //if these are changed, bring the test back to the start
     //for this to be done, update necessary variables
-    if (this.idx === 1 || this.idx === 3) { 
+    if (this.idx === 1 || this.idx === 3) {
       //if its auto-restart or random switch
       testCheck(); //call the testCheck function
       reach = 0;
@@ -107,63 +105,62 @@ class Switch {
       lost = false;
     }
   }
-  
+
   move() {
     if (this.on) {
       this.x_ = this.x + this.r; //if toggle should be ON, move to right
       //by given value
-    } 
-    else {
+    } else {
       this.x_ = this.x - this.r; //if toggle is to be OFF, move to the                                    //left
     }
   }
-  
-  
+
   colour() {
     //This is for the user to see that the cursor is actually
-    //over the toggle, so it gives a lightened color effect 
+    //over the toggle, so it gives a lightened color effect
     //to show this
     if (this.mouseOver()) {
       this.col1 = color(bg, 100);
+    } else {
+      this.col1 = bg; //if mouse is not over the toggle, color is
+      //background color
     }
-    else {
-      this.col1 = bg; //if mouse is not over the toggle, color is     
-                      //background color
-    }
-    
+
     //if the toggle is ON, change the switch to GREEN color
-    if (this.on) { 
+    if (this.on) {
       this.col2 = lerpColor(green, red, this.pct);
     }
-    
+
     //if the toggle is OFF, chanfe the switch to RED color
     else {
       this.col2 = lerpColor(red, green, this.pct);
     }
-    
+
     //for the theme swtich alone, instead of showing green and red
     //show the theme color for the switch color.
     //again, attention to user experience
     if (this.idx == 0) {
-      this.col2 = fg; 
+      this.col2 = fg;
     }
   }
-  
+
   display() {
-    
-    
+    //place the texts on the screen - done after a lot of testing to
+    //see the optimal place for every letter
     this.x__ += (this.x_ - this.x__) * 0.03;
     this.pct = (abs(this.x_ - this.x__) * 0.5) / this.r;
     this.colour();
     fill(this.col2);
     let k = 1.25;
-    rect(this.x, this.y, this.r * 2, this.r * 2 * k);
-    circle(this.x - this.r, this.y, this.r * k);
-    circle(this.x + this.r, this.y, this.r * k);
 
-    
-    fill(this.col1);
-    circle(this.x__, this.y, this.r);
+    //for toggles - rectangle in between
+    rect(this.x, this.y, this.r * 2, this.r * 2 * k);
+    circle(this.x - this.r, this.y, this.r * k); //circle on one end
+    circle(this.x + this.r, this.y, this.r * k); //circle on other end
+    //this is to attain the proper shape of the toggle
+
+    fill(this.col1); //black color of the toggle
+    circle(this.x__, this.y, this.r); //the circle shape of the toggle
 
     //the swtiches' names correspond to these numbers
     if (this.idx === 0) this.tex = "theme";
@@ -189,14 +186,13 @@ function preload() {
 
 //required function that runs only once
 function setup() {
-  
-  //if the strings array has no values, there is not need of continuing 
+  //if the strings array has no values, there is not need of continuing
   //with the program as one of the main random funtions wouldn't work
-  //so we can terminate the program directly in that case giving an 
+  //so we can terminate the program directly in that case giving an
   //understandable error on the console, instead of a red p5.js error
   if (strings == null) {
     print("failed to load the file, stopping here");
-      
+
     //this is an endless loop as there is no point in continuing with
     //something that doesn't work or will anyways give an error later
     while (true) {}
@@ -261,17 +257,17 @@ function WelcomeScreen() {
   strokeWeight(3);
   //13 in width/13 is chosen upon trail and testing
   textAlign(CENTER); //align the text with respect to screen
-  text("--Welcome to SpeedoType--", width/2, height/5);
-  
+  text("--Welcome to SpeedoType--", width / 2, height / 5);
+
   //The sizes are decided upon what is felt
   //right for the screen size and the amount of information
   //presented as instructions
   strokeWeight(1);
   textSize(25);
-  text("(Inspired from MonkeyType)", width/2, height / 3.5);
+  text("(Inspired from MonkeyType)", width / 2, height / 3.5);
   strokeWeight(2);
   textSize(35);
-  text("Instructions:", width/2, height / 2.5);
+  text("Instructions:", width / 2, height / 2.5);
 
   //instructions to be displayed
   //The sizes are decided upon what is felt
@@ -279,16 +275,16 @@ function WelcomeScreen() {
   //presented as instructions
   strokeWeight(1);
   textSize(20);
-  text("1. This is a typing test game.", width/2, height / 2);
+  text("1. This is a typing test game.", width / 2, height / 2);
   text(
     "2. If you wish, you can choose to get random words.",
-    width /2,
+    width / 2,
     height / 2 + 25
   );
   //since the height of instructions is at a distance of 25 pixels
   //which was found to be optimum after testing, we're incrementing
   //the height by multiples of 25
-  
+
   text("3. Feel free to explore the toggles.", width / 2, height / 2 + 50);
   text(
     "4. You will see your scores recorded on the right.",
@@ -309,7 +305,7 @@ function WelcomeScreen() {
 
   //again, the numbers are chosen upon testing to best fit
   //for the better reading experience of the user
-  image(mousePointerImg, width/2, 17.5*height/20, 30, 30);
+  image(mousePointerImg, width / 2, (17.5 * height) / 20, 30, 30);
 }
 
 function draw() {
@@ -321,12 +317,12 @@ function draw() {
   //this will be executed when mouseClicked is true
   //and the screenNumber will change to 1
   else {
-    theme(); 
+    theme();
     //call the theme function where its default set to dark theme
-    
+
     background(bg);
     ///bg is a variable from the function to store the bg color
-    
+
     //display the switch objects created earlier
     randomSwitch.display();
     smoothSwitch.display();
@@ -336,76 +332,112 @@ function draw() {
     //set the relative point to be the center of the screen
     translate(width * 0.5, height * 0.5);
 
+    //if the game is starting, start counting the time
+    //to record the time to present it to the user later
     if (reach === 0) {
       start = floor(millis());
-      if (!won) time = 0;
+      if (!won) {
+        time = 0; //when reset, reset the time to 0 as well
+      }
       current = 0;
     }
 
     let recCol;
-    if (won) recCol = green;
-    else if (lost) {
-      if (restartSwitch.on) start = floor(millis());
+    if (won) {
+      //when won, make the color GREEN
+      recCol = green;
+    } else if (lost) {
+      //when lost color is RED
+      //when restarted, restart the timer again
+      if (restartSwitch.on) {
+        start = floor(millis());
+      }
       recCol = red;
+      //floor function rounds off to the highest integer below decimal
       time = floor(millis()) - floor(start);
     } else {
       recCol = fg;
       time = floor(millis()) - floor(start);
     }
 
-    fill(recCol);
-    rect(0, 0, width, 100);
+    fill(recCol); //fill the screen with the color either
+    //GREEN or RED
+    rect(0, 0, width, 100); //the box for typing
 
     if (smoothSwitch.on) {
-      if (current !== reach) current += (reach - current) * 0.1;
-    } else current = reach;
+      //smooth function - no fluidic transition
+      //so
+      if (current !== reach) {
+        current += (reach - current) * 0.1;
+      }
+    } else {
+      current = reach;
+    } //else the fluidic transition can happen as it is
 
     if (reach === test.length) {
       current = 0;
-    }
+    } //come back to start after finishing the test
 
+    //Score on the right top side
     textFormat(RIGHT, TOP, NORMAL, 30);
-    fill(fg, 150);
-    for (var i = 0; i < score[scoreIdx].length; i++) {
+    fill(fg, 150); //foreground color
+
+    //add the score to the top right margin instead of '-'
+    //when the user finishes a test and gets a score
+    for (let i = 0; i < score[scoreIdx].length; i++) {
       if (isFinite(score[scoreIdx][i]))
         text(
           T(score[scoreIdx][i]),
           width * 0.5 - marg,
           marg - height * 0.5 + 30 * i
         );
-      //top scores
-      else text("-", width * 0.5 - marg, marg - height * 0.5 + 30 * i); //empty score
+      //calculate and place top scores accordingly
+      else text("-", width * 0.5 - marg, marg - height * 0.5 + 30 * i); //empty score - just fill it with '-' on the top right of the gamescreen
     }
 
+    //textformatting and colors for text
     textFormat(LEFT, TOP, NORMAL, 30);
     fill(fg, 150);
     text(key, marg - width * 0.5, marg - height * 0.5); //recent key
     textAlign(RIGHT, BOTTOM);
-    // text(join(egg, " ") + " " + bestBadge,
-    //   width * 0.5 - marg,
-    //   height * 0.5 - marg
-    // ); //easter eggs
 
-    fill(fg);
+    fill(fg); //foreground color based on theme
     textFormat(CENTER, TOP, BOLD, 50);
     text(T(time), 0, marg - height * 0.5); //time
 
+    //take this as the reference start points now with
+    //whats already given in the function parameters
     translate(-spacing * current, 0);
 
     for (let i = 0; i < test.length; i++) {
       let opacity = map(spacing * abs(i - current), 0, width * 0.5, 0, 1);
+      //in the game screen, the right letters are transparent
+      //as it progresses towards right
       opacity = 1 - 0.5 * pow(constrain(opacity, 0, 1), 2);
       opacity = 255 * constrain(opacity - (i < reach ? 0 : 0.3), 0, 1);
 
+      //fill the rectangle with the opacity declared above
       fill(bg, opacity);
+
+      //formatting of the text according to testings and best look
       textFormat(CENTER, BOTTOM, i < reach ? BOLD : NORMAL, 36);
       text(test.charAt(i), i * spacing, 0); //letters
       stroke(bg, opacity);
 
+      //this block represents the dots and the bar
+      //below the letters that are to be typed.
+      //the dot turns into a bar when the user reaches
+      //that particular letter to type
       let e;
-      if (i === reach) e = 1 - reach + current;
-      else if (i === reach - 1) e = reach - current;
-      else e = 0;
+      if (i === reach) {
+        e = 1 - reach + current;
+      } else if (i === reach - 1) {
+        e = reach - current;
+      } else {
+        e = 0;
+      }
+      
+      //the width and size of the bar and dots
       strokeWeight(3);
       line(i * spacing, 20, i * spacing, 20 + e * 10);
       noStroke();
@@ -417,15 +449,13 @@ function draw() {
 //This function defines that
 //keyPressed involves keys like backspace, return(enter), escape etc.
 function keyPressed() {
-  
-  //if the user started typing and restart switch is OFF and if they 
+  //if the user started typing and restart switch is OFF and if they
   //type a backspace
   if (typed.length > 0 && !restartSwitch.on && lost && keyCode === BACKSPACE) {
-    
-    typed.pop(); 
-    //When the auto-restart is off, the user will be able to 
+    typed.pop();
+    //When the auto-restart is off, the user will be able to
     //delete the character
-    
+
     reach--; //come back in the characters string
     lost = false; //they didnt lose as they have a chance to backspace
     //and program waits for the correct character
@@ -439,10 +469,10 @@ function keyTyped() {
   if (!lost || typed.length === 0) {
     typed.push(key);
   }
-  
+
   //consider the typed string and join it with the string
   var typedStr = join(typed, "");
-  
+
   //if the user finishes the game go back to start as well
   if (won) {
     reach = 0;
@@ -451,14 +481,12 @@ function keyTyped() {
     current = 0;
     won = false;
   }
-  
+
   //turn the game back to start as usual
   if (lost && restartSwitch.on) {
     lost = false;
   }
-  
-  
-  
+
   if (!won) {
     if (
       //convert both to uppercase and then compare
@@ -466,7 +494,7 @@ function keyTyped() {
       typedStr.toUpperCase().charAt(reach) === test.toUpperCase().charAt(reach)
     ) {
       reach++; //as a key is typed, if right, proceed forward
-      
+
       //keep proceeding forward and if the the user finishes
       //the test (will be without errors) so they WON.
       //go back to initial state
@@ -488,18 +516,18 @@ function keyTyped() {
         reach = 0;
         typed.length = 0; //auto-restart
         if (randomSwitch.on) {
-          testCheck();//check which test is to be shown to the user
+          testCheck(); //check which test is to be shown to the user
           //since random is ON
         }
       } else {
         // if the restartSwitch is OFF and if user doesnt lose, keep
-        //going ahead and until the string reaches the last element, 
+        //going ahead and until the string reaches the last element,
         //keep incrementing the reach
-        if (!lost) // 
+        if (!lost)
           if (reach !== test.length - 1) {
+            //
             reach++;
-          }
-          else {
+          } else {
             //pop the character if reach equals the last character
             typed.pop();
           }
@@ -510,14 +538,14 @@ function keyTyped() {
 }
 
 function mouseClicked() {
-  //when the mouse is clicked on welcome screen, 
+  //when the mouse is clicked on welcome screen,
   //proceed to the next screen, play the sounds.
   if (screenNumber == 0) {
     screenNumber = 1;
     typingSound.play();
     letsBegin.play();
   }
-  
+
   //toggle the different switches when mouse is clicked
   if (randomSwitch.mouseOver()) {
     randomSwitch.toggle();
@@ -564,13 +592,11 @@ function generateRandomLine() {
 
   let temp = ""; //create a temporary string to store and return content
   for (let i = 0; i < lineOfWords.length; i++) {
-    
-    //this if loop is to ensure that there is no space 
+    //this if loop is to ensure that there is no space
     //at the end of the last word
-    if (i == (lineOfWords.length-1)) { 
+    if (i == lineOfWords.length - 1) {
       temp += lineOfWords[i];
-    }
-    else {
+    } else {
       temp += lineOfWords[i] + " "; // add a space after every word
       //from the array
     }
@@ -579,12 +605,11 @@ function generateRandomLine() {
 }
 
 function theme() {
-  
   //if the theme switch is one, make it dark themed
   //else make it light mode
   if (themeSwitch.on) {
-    bg = 20; //background color 
-    fg = 200; //foreground color with text 
+    bg = 20; //background color
+    fg = 200; //foreground color with text
   } else {
     bg = 210;
     fg = 45;
@@ -592,8 +617,8 @@ function theme() {
 }
 
 //this function checks what kind of test the user wants
-//and gives the test to the user. If random is off, it gives 
-//test0 and otherwise it gives a random 12 word line from the 
+//and gives the test to the user. If random is off, it gives
+//test0 and otherwise it gives a random 12 word line from the
 //csv file
 
 function testCheck() {
@@ -602,8 +627,8 @@ function testCheck() {
     test = generateRandomLine();
     // test = join(testlist, "");
     scoreIdx = 1;
-  } 
-  
+  }
+
   //otherwise, give the test0 which is the default one
   else {
     test = test0;
@@ -614,7 +639,7 @@ function testCheck() {
 function textFormat(align1, align2, style, size) {
   //horizontally and vertically align
   textAlign(align1, align2);
-  //text styles and sizes are declared 
+  //text styles and sizes are declared
   textStyle(style);
   textSize(size);
 }
