@@ -40,7 +40,7 @@ The ````theme```` switch changes the theme between light and dark modes as per t
 
 ### User Testing and Feedback:
 - I have created a [Full-screen Version](https://editor.p5js.org/sri.pranav/full/MwdQ82b5j) of the game, and shared it with some of my friends without saying anything about the game itself. 
-- One annoying thing from the user's end was that the program expects a space even after the last word. This was happening because I was adding a space after taking each word from the array and hence, even for the last word.
+- One annoying thing from the user's end was that the program expects a space even after the last word. It was like the user goes "annndd.. am done what's the time? Whoops! It actually didn't end and it expects a space? Whyy? I lost my scorestreak!". I realized this was happening because I was adding a space after taking each word from the array and hence, even for the last word.
 ````
 for (let i = 0; i < lineOfWords.length; i++) {
     temp += lineOfWords[i] + " ";
