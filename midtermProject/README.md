@@ -76,4 +76,4 @@ Generating a CSV file of random words: https://onlinerandomtools.com/generate-ra
 
 Sound in the beginning of the game: https://elements.envato.com/cartoon-katie-saying-lets-begin-2SDCUFJ 
   
-GitHub code for Switch class: https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js
+GitHub code for parts of the UI, Switch class and related functions : https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js
