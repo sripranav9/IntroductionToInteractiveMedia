@@ -72,8 +72,8 @@ https://editor.p5js.org/sri.pranav/sketches/MwdQ82b5j
 https://editor.p5js.org/sri.pranav/full/MwdQ82b5j
 
 #### References:
-GitHub code for Switch class: https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js
-
 Generating a CSV file of random words: https://onlinerandomtools.com/generate-random-csv 
 
 Sound in the beginning of the game: https://elements.envato.com/cartoon-katie-saying-lets-begin-2SDCUFJ 
+  
+GitHub code for Switch class: https://github.com/vincentsijben/p5js-typing-game/blob/master/js/sketch.js
