@@ -44,5 +44,5 @@ https://user-images.githubusercontent.com/92122776/160923871-e1ed1a11-4c48-4413-
 - One of the things that I found was that, I was in search of many conductive materials but I haven't realized how some of them are just around but I do not recognize them. While working with the project, the wire once touched a part of headphone which was aluminium, the circuit was complete and the bulb was flickering. The first place I need to go to look for materials is: well look around myself.
 
 #### References:
-Interesting Source I found:
+Interesting Website I found:
 https://www.exploratorium.edu/tinkering/projects/homemade-switches
