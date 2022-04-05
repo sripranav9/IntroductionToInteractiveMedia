@@ -5,7 +5,7 @@
 
 #### Description:
 The program gets information from an analog sensor- Potentiometer which controls two LED's based on their  a digital sensor- Switch which controls one LED.
-Based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value, Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half of the pot values out of the half of maximum pot value already chosen, symbolising the lights of an ATC Tower that I've seen in the airports. (The actual towers might not work exactly this way).
+Based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value, Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half of the pot values out of the half of maximum pot value already chosen, symbolising the lights of an ATC Tower that I've seen in the airports (The actual towers might not work exactly this way).
 
 #### Development Process:
 - Initially, I started off building the circuit for the potentiometer. After understanding the pot values, I then tried to code in a way to control the LED to change its blinking based on the pot position at that point in time. 
