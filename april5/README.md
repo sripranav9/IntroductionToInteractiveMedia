@@ -36,6 +36,9 @@ https://user-images.githubusercontent.com/92122776/161695928-72a537ec-b0b9-4c79-
 - I had a tough time figuring out why my blue LED is not as bright as the red one, turns out its a simple part of the code that I forgot. I just had to include the line of code in ````setup()```` function to set pin 12 as an output:
   ````pinMode(blueLEDPin, OUTPUT);````
 - I had a hard time figuring out my way through the mess of wires on the breadboard. However, the circuit diagram has helped me understand better and figure out my way through this problem.
+
+<img src="https://user-images.githubusercontent.com/92122776/161698546-add73ef9-fe09-4047-921d-f50269dba751.png" width=45% height=45%> <img src="https://user-images.githubusercontent.com/92122776/161698567-722f1ee2-fb6d-4dd6-aa06-44f133444a6b.png" width=45% height=45%>
+
 - Even to make a schematic, seeing the breadboard to make a circuit sometimes is a hassle. But I had a lot of learning how to do it. I was even taken back to my 11th and 12th grade physics where I used to prepare these circuits for various tests and quizzes. It makes a lot more sense now when doing it practically. Indeed, Hands-On learning is Fun!
 
 #### Discoveries:
