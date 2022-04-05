@@ -1,13 +1,11 @@
 ## Assignment 6 (April 5)
 ### Using Digital and Analog Sensors:
 
-### Reminds me of ATC Towers at Airports
+### ATC Tower Lights at Airports
 
 #### Description:
 The program gets information from an analog sensor- Potentiometer which controls two LED's based on their  a digital sensor- Switch which controls one LED.
-Based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value,
-Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half
-of the pot values out of the half of maximum pot value already chosen.
+Based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value, Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half of the pot values out of the half of maximum pot value already chosen.
 
 #### Development Process:
 - Initially, I started off building the circuit for the potentiometer. After understanding the pot values, I then tried to code in a way to control the LED to change its blinking based on the pot position at that point in time. 
@@ -25,6 +23,7 @@ https://user-images.githubusercontent.com/92122776/161696505-70ff8e69-60f6-4d64-
 
 - I then used the switch, but this time directly connected to pin 9 instead of the 5V to be able to control the brightness and delay in the LED.
 - I controlled the switch instead of using the traditional turn ON and OFF LED to be similar to that of the ATC Tower at the airport. The final outcome video can represent this. 
+- I don't exactly know the lights at ATC Tower but in my imaginary world, I would love to use two kind of lights or more in that case, and as the planes probably get a signal of takeOff or landing, the different lights light up at different speeds. 
 
 #### Schematic:
 
