@@ -1,5 +1,6 @@
 ## Assignment 6 (April 5)
-### Using Digital and Analog Sensors
+### Using Digital and Analog Sensors:
+### Reminds me of ATC Towers at Airport
 
 #### Description:
 The program gets information from an analog sensor- Potentiometer which controls two LED's based on their  a digital sensor- Switch which controls one LED.
