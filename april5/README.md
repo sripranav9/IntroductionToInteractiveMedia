@@ -1,5 +1,5 @@
 ## Assignment 6 (April 5)
-### Unusual Switch
+### Using Digital and Analog Sensors
 
 #### Description:
 The program gets information from an analog sensor- Potentiometer which controls two LED's based on their  a digital sensor- Switch which controls one LED.
@@ -9,12 +9,32 @@ of the pot values out of the half of maximum pot value akready chosen.
 
 #### Development Process:
 - Initially, I started off building the circuit for the potentiometer. After understanding the pot values, I then tried to code in a way to control the LED to change its blinking based on the pot position at that point in time. 
+
+- Later, I implemented it using two LEDs and achieved the blinking of different LEDs based on the pot position of the potentiometer. One of the problems I found here was that the blue LED is comparitively less brighter when compared to the red one. I initially thought it was the bulb (a fault in the bulb maybe) but turns out I forgot to include the serial pin as an output pin in the ````setup()```` function. (I have mentioned more about this in the Problems, Solutions and some thoughts)
+
+https://user-images.githubusercontent.com/92122776/161697005-2eec1758-4808-490a-8fe6-47bebd5524e2.mov
+
+- I could then achieve what I mentioned in the description- based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value, Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half.
 - Later, I implemented it using two LEDs and acheived what is mentioned in the description- based on the potentiometer's position (Pot Value), the glowing of red bulb or the blue bulb occurs i.e when the pot value reads more than half of the maximum pot value, Red LED blinks, and blue LED when it is less than half of maximum value. Based on the position again, It blinks faster and slower if its on the lower half or upper half.
 - Later, after understanding the circuit of this analog sensor, I had to revisit every connection to understand how I am going to use this circuit for the digital sensor, which in this case is a switch.
-- I then used the switch, but this time directly connected to pin 9 instead of the 5V to be able to control the brightness and delay in the LED. 
+- I first made a circuit using the switch which turns on LED when the switch is pressed, the traditional one.
+
+https://user-images.githubusercontent.com/92122776/161696505-70ff8e69-60f6-4d64-944a-264b521df42c.mov
+
+- I then used the switch, but this time directly connected to pin 9 instead of the 5V to be able to control the brightness and delay in the LED.
+
+#### Schematic:
+
+![circuitDiagram](https://user-images.githubusercontent.com/92122776/161696232-ca0e1075-d909-42d8-88e3-e4ac7c54ee27.jpeg)
+
+#### Final Outcome:
+
+https://user-images.githubusercontent.com/92122776/161695928-72a537ec-b0b9-4c79-b336-898d58dbfff2.mov
 
 
 #### Problems, Solutions, and some thoughts:
+- I had a tough time figuring out why my blue LED is not as bright as the red one, turns out its a simple part of the code that I forgot. I just had to include the line of code in ````setup()```` function to set pin 12 as an output:
+  ````pinMode(blueLEDPin, OUTPUT);````
 - I had a hard time figuring out my way through the mess of wires on the breadboard. However, the circuit diagram has helped me understand better and figure out my way through this problem.
 - Even to make a schematic, seeing the breadboard to make a circuit sometimes is a hassle. But I had a lot of learning how to do it. I was even taken back to my 11th and 12th grade physics where I used to prepare these circuits for various tests and quizzes. It makes a lot more sense now when doing it practically. Indeed, Hands-On learning is Fun!
 
