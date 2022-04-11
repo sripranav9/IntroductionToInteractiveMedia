@@ -34,6 +34,8 @@ This particular assignment is inspired from the concept of polyphony in the subj
 - The push button when it is clicked, changes the rythm of the melody to another one out of the three we have here in this assignment. 
 - Another reason why we chose exactly three rythms is for three different arduinos that we are using.
 - We used ````buttonPushCounter == 0```` or ````buttonPushCounter == 1```` to articulate the action of the buzzer with respect to its rythm.
+  <img src="https://user-images.githubusercontent.com/92122776/162836003-96d367d9-121b-4109-aaf0-5f9900611ddd.jpeg" width=50% height=50%>
+
    
 #### Things that stood out to me personally:
 - I was really intrigued when Daniel taught us how to calculate beats per minute, and many other intricate stuff when it comes to just this tiny melody that we are playing here initally. I really felt music indeed is a really interesting subject.
@@ -70,6 +72,14 @@ This particular assignment is inspired from the concept of polyphony in the subj
 #### Schematic:
 
 <img src="https://user-images.githubusercontent.com/92122776/162834765-4e14cdec-8f62-49ad-a912-c4019f9c6583.jpeg" width=50% height=50%>
+
+#### Problems:
+- Syncing the rythms together, as all of us have to press the RESET button at once was a hassle, but once it works: WOW!
+- Delaying of the switch's input as we are everything in the for loop happens in order i.e even after the swtich button state is changed, the arduino takes time to update the change as it finishes its current process first. 
+- Producing the rythms from the scratch - hard but indeed had a lot of fun!- Its hard to fiddle with the circuit even just to check the connections for making the schematic, as they are very crowded and our hands are too big to make the necessary changes / not to disturb any that've already been made.
+
+#### Discoveries:
+- One interesting thing we found while playing with the Arduino is that the three pairs of pins on the middle (vertically) of one end of Arduino- when any conductor touches one of those pins, the circuit resets itself for some reason. Wonder what the use of those pins exactly are. 
 
 #### Final Outcome:
 
