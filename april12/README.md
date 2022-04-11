@@ -84,3 +84,5 @@ This particular assignment is inspired from the concept of polyphony in the subj
 
 #### Final Outcome:
 
+#### References and Inspiration:
+Arduino to Max/Msp: [YouTube Link](https://www.youtube.com/watch?v=ftDtsSHU2UM)- Inspired that we can change the speeds using knobs, in our case, the potentiometers.
