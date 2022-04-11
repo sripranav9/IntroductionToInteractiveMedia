@@ -35,7 +35,7 @@ This particular assignment is inspired from the concept of polyphony in the subj
 - Another reason why we chose exactly three rythms is for three different arduinos that we are using.
 - We used ````buttonPushCounter == 0```` or ````buttonPushCounter == 1```` to articulate the action of the buzzer with respect to its rythm.
 
-<img width=50% height=50% alt="circuit" src="https://user-images.githubusercontent.com/92122776/162836505-36a6d22d-3a24-49b4-8990-324309e2d8f0.png">
+<img width=75% height=75% alt="circuit" src="https://user-images.githubusercontent.com/92122776/162836505-36a6d22d-3a24-49b4-8990-324309e2d8f0.png">
 
    
 #### Things that stood out to us personally:
@@ -72,7 +72,7 @@ This particular assignment is inspired from the concept of polyphony in the subj
 
 #### Schematic:
 
-<img src="https://user-images.githubusercontent.com/92122776/162834765-4e14cdec-8f62-49ad-a912-c4019f9c6583.jpeg" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/92122776/162834765-4e14cdec-8f62-49ad-a912-c4019f9c6583.jpeg" width=65% height=65%>
 
 #### Problems:
 - Syncing the rythms together, as all of us have to press the RESET button at once was a hassle, but once it works: WOW!
