@@ -8,7 +8,7 @@
 #### Description:
 This particular assignment is inspired from the concept of polyphony in the subject of music. The objective is to use three different arduinos (of each group member) to change the speed of the melodies using the potentiometer (analog sensor), and change the notes of the music using the switch (digital sensor). 
 
-#### Development Process:
+#### Overview of the Development Process:
 - We played with the rythms of the example on Arduino, made several other rythms on computational media and could finalize 3 ryhthms to be used in this assignment.
 - We first tried to implement the buzzer using a potentiometer, intitally using the examples of Arduino to test the circuit. 
 - Once we were successful on getting it to work, we played with music notes and later calculated the necessary elements for the further implementation of the program like: BPM (beats per minute). 
@@ -35,4 +35,34 @@ This particular assignment is inspired from the concept of polyphony in the subj
 - Another reason why we chose exactly three rythms is for three different arduinos that we are using.
 - We used ````buttonPushCounter == 0```` or ````buttonPushCounter == 1```` to articulate the action of the buzzer with respect to its rythm.
    
+#### Things that stood out to me personally:
+- I was really intrigued when Daniel taught us how to calculate beats per minute, and many other intricate stuff when it comes to just this tiny melody that we are playing here initally. I really felt music indeed is a really interesting subject.
+- So to change the rythms everytime, Daniel came up with the right notes for the ````melody[]```` array and the right durations for ````noteDurations```` array. Below are the notes and durations for 
+  
+  Rythm 1:
+  
+  ```` // notes in the melody:
+  int melody[] = {
+    NOTE_E3, NOTE_G3, NOTE_F3, NOTE_E3, NOTE_B2, NOTE_D3, NOTE_C3
+  };
 
+  // note durations: 4 = quarter note, 8 = eighth note, etc.:
+  int noteDurations[] = {
+   4, 4, 4, 4, 4, 4, 4
+  };
+  ````
+  
+  Rythm 2:
+  
+  ````// notes in the melody:
+  int melody[] = {
+    NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
+  };
+
+  // note durations: 4 = quarter note, 8 = eighth note, etc.:
+  int noteDurations[] = {
+    4, 8, 8, 4, 4, 4, 4, 4
+  };
+  ````
+  
+- The fact that it took quite a long time to calculate the right note, and then the right duration for each note made me look at the intricacy in music. 
