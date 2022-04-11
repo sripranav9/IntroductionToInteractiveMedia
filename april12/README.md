@@ -34,7 +34,8 @@ This particular assignment is inspired from the concept of polyphony in the subj
 - The push button when it is clicked, changes the rythm of the melody to another one out of the three we have here in this assignment. 
 - Another reason why we chose exactly three rythms is for three different arduinos that we are using.
 - We used ````buttonPushCounter == 0```` or ````buttonPushCounter == 1```` to articulate the action of the buzzer with respect to its rythm.
-  <img src="https://user-images.githubusercontent.com/92122776/162836003-96d367d9-121b-4109-aaf0-5f9900611ddd.jpeg" width=50% height=50%>
+
+<img width=50% height=50% alt="circuit" src="https://user-images.githubusercontent.com/92122776/162836505-36a6d22d-3a24-49b4-8990-324309e2d8f0.png">
 
    
 #### Things that stood out to me personally:
