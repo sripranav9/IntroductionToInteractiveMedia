@@ -38,11 +38,11 @@ This particular assignment is inspired from the concept of polyphony in the subj
 <img width=50% height=50% alt="circuit" src="https://user-images.githubusercontent.com/92122776/162836505-36a6d22d-3a24-49b4-8990-324309e2d8f0.png">
 
    
-#### Things that stood out to me personally:
+#### Things that stood out to us personally:
 - I was really intrigued when Daniel taught us how to calculate beats per minute, and many other intricate stuff when it comes to just this tiny melody that we are playing here initally. I really felt music indeed is a really interesting subject.
 - So to change the rythms everytime, Daniel came up with the right notes for the ````melody[]```` array and the right durations for ````noteDurations```` array. Below are the notes and durations for 
   
-  Rythm 1:
+  Melody 1:
   
   ```` // notes in the melody:
   int melody[] = {
@@ -55,7 +55,7 @@ This particular assignment is inspired from the concept of polyphony in the subj
   };
   ````
   
-  Rythm 2:
+  Melody 2:
   
   ````// notes in the melody:
   int melody[] = {
