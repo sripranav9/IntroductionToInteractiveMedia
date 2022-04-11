@@ -65,4 +65,11 @@ This particular assignment is inspired from the concept of polyphony in the subj
   };
   ````
   
-- The fact that it took quite a long time to calculate the right note, and then the right duration for each note made me look at the intricacy in music. 
+- The fact that it took quite a long time to calculate the right note, and then the right duration for each note made me look at the intricacy in music.
+
+#### Schematic:
+
+<img src="https://user-images.githubusercontent.com/92122776/162834765-4e14cdec-8f62-49ad-a912-c4019f9c6583.jpeg" width=50% height=50%>
+
+#### Final Outcome:
+
