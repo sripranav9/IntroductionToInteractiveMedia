@@ -101,7 +101,7 @@ The final outcome of the project with several rythms can be found below:
   https://user-images.githubusercontent.com/92122776/162902365-8cedd713-490f-44df-9fd2-ebffd51b81d5.MOV
 
 
-  https://user-images.githubusercontent.com/92122776/162902951-f369aca1-fd9f-4204-af66-0202fd481cfd.MOV
+  https://user-images.githubusercontent.com/92122776/162903386-53a89cbc-c610-430e-b4a3-98102f53c70d.MOV
 
 
   https://user-images.githubusercontent.com/92122776/162902394-7e4e4762-3479-4a7b-b5ca-b57bc8b1be43.mov
