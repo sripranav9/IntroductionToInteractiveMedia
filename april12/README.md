@@ -92,8 +92,8 @@ The final outcome of the project with several rythms can be found below:
   Working:
   
   
-  https://user-images.githubusercontent.com/92122776/162904530-f1673191-ad86-48c7-977d-f8bbd473e1fa.mov
-  
+  https://user-images.githubusercontent.com/92122776/162906483-5b24613e-5745-44df-a0f6-2cd33fa5bf0f.mov
+ 
 
   https://user-images.githubusercontent.com/92122776/162904796-9160c541-5008-4612-933f-f5e8e301a030.mov
   
