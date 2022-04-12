@@ -92,17 +92,17 @@ The final outcome of the project with several rythms can be found below:
   Working:
   
   
-  https://user-images.githubusercontent.com/92122776/162900662-80deb971-b2a1-41f7-b66b-431cfebb685d.MOV
+  https://user-images.githubusercontent.com/92122776/162904530-f1673191-ad86-48c7-977d-f8bbd473e1fa.mov
   
 
-  https://user-images.githubusercontent.com/92122776/162901754-8f52def5-9303-4cb1-a1c3-1e788d6f82dd.MOV
+  https://user-images.githubusercontent.com/92122776/162904796-9160c541-5008-4612-933f-f5e8e301a030.mov
+  
+
+  https://user-images.githubusercontent.com/92122776/162905300-4135487e-32b4-4d4e-8658-7bc9bef498ac.mov
 
 
-  https://user-images.githubusercontent.com/92122776/162902365-8cedd713-490f-44df-9fd2-ebffd51b81d5.MOV
-
-
-  https://user-images.githubusercontent.com/92122776/162903386-53a89cbc-c610-430e-b4a3-98102f53c70d.MOV
-
+  https://user-images.githubusercontent.com/92122776/162905536-821553ff-d49d-4395-8090-74ed09f606e3.mov
+  
 
   https://user-images.githubusercontent.com/92122776/162902394-7e4e4762-3479-4a7b-b5ca-b57bc8b1be43.mov
   
