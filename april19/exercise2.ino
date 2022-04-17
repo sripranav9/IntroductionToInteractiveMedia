@@ -1,0 +1,29 @@
+int led = 5;           // the PWM pin the LED is attached to
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 10;    // how many points to fade the LED by
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  analogWrite(led, brightness);
+  while (Serial.available() > 0) {
+    // read the incoming byte:
+    int inByte = Serial.read();
+    switch (inByte) {
+      case 1:
+        analogWrite(led, brightness);
+        brightness = brightness - fadeAmount;
+        break;
+      case 2:
+        analogWrite(led, brightness);
+        brightness = brightness + fadeAmount;
+        break;
+    }
+    if (brightness <= 0 || brightness >= 255) {
+    fadeAmount = -fadeAmount;
+    }
+  }
+}
