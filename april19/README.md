@@ -48,6 +48,6 @@ Video of Working:
 
 https://user-images.githubusercontent.com/92122776/163864249-44dede41-ced5-49ff-9a9d-dc6879d8ed39.mov
 
-#### Learning Experience:
+#### Learning Experiences:
 - I loved working in a team as it is very a very efficient way of debugging.
 - There are some parts which I perhaps needed more clarity on, and working in a team turned out to be the best way to clarify all the blocks. 
