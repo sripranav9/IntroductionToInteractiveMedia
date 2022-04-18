@@ -5,7 +5,11 @@
 In Class Exercises
 
 #### Exercise 1:
+Problem Statement: Make something that uses only one sensor on arduino and makes the ellipse in p5 move on the horizontal axis, in the middle of the screen, and nothing on arduino is controlled by p5
+
+
 p5 Code: https://editor.p5js.org/sri.pranav/sketches/sxJXJg-pc
+
 
 Video of Working:
 
@@ -13,6 +17,8 @@ https://user-images.githubusercontent.com/92122776/163863573-dac28121-6f08-4655-
 
 
 #### Exercise 2:
+Problem Statement: Make something that controls the LED brightness from p5
+
 p5 Code: https://editor.p5js.org/sri.pranav/sketches/VbfHMtwuJ
 
 Video of Working:
@@ -21,6 +27,8 @@ https://user-images.githubusercontent.com/92122776/163863748-0a985a22-6b2f-4b0c-
 
 
 #### Exercise 3:
+Problem Statement: Take the [gravity wind example](https://editor.p5js.org/aaronsherwood/sketches/I7iQrNCul) and make it so every time the ball bounces one led lights up and then turns off, and you can control the wind from one analog sensor
+
 p5 Code: https://editor.p5js.org/sri.pranav/sketches/Mcmo1n27c
 
 Video of Process - 1:
