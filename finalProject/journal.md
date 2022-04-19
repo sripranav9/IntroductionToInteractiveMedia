@@ -13,4 +13,4 @@ In our case, We know there is an Ultra-sonic sensor that can help us with the ob
 #### Date: 19th April 2022
 We can use the wheels in the Arduino Kit and some materials like cardboard etc and make sort of a car. 
 
-Working: A robot that goes around, and when it hits an obstacle, it shines a RED light and can even make a sound. Probably make a sound like "Ouch, that is something!". There can be another motor similar to the cleaner, which we might append based on our ideas as they come.
+**Working**: A robot that goes around, and when it hits an obstacle, it shines a RED light and can even make a sound. Probably make a sound like "Ouch, that is something!". There can be another motor similar to the cleaner, which we might append based on our ideas as they come.
