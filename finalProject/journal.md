@@ -9,3 +9,8 @@ The idea is inspired from robot cleaners. Just for the background, we've watched
 In our case, We know there is an Ultra-sonic sensor that can help us with the obstacles and we have wheels and motors to make the robot. The idea is not exactly to make a cleaner, but something similar which runs in parallel in terms of the sensors used in Robot Cleaner.
 
 ![XShuaiHXSC3 Robotic Vacuum Cleaner_2](https://user-images.githubusercontent.com/92122776/163926727-a8dc3bfa-4095-4d9f-9bb2-a44764c65934.jpeg)
+
+#### Date: 19th April 2022
+We can use the wheels in the Arduino Kit and some materials like cardboard etc and make sort of a car. 
+
+Working: A robot that goes around, and when it hits an obstacle, it shines a RED light and can even make a sound. Probably make a sound like "Ouch, that is something!". There can be another motor similar to the cleaner, which we might append based on our ideas as they come.
