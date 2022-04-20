@@ -1,6 +1,6 @@
 # Final Project Journal
 
-Group: Ayesha and Pranav
+**Group**: Ayesha and Pranav
 
 #### Date: 18th April 2022
 ### Preliminary Idea:
