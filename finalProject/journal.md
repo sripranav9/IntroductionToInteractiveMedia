@@ -1,7 +1,7 @@
 # RoboPet
 # Final Project Journal
 
-## Group: [Ayesha](https://github.com/ayeshaahmed13/IntroToIM) and Pranav
+## Group: Ayesha and Pranav
 
 Shortcut for the latest entry in the Journal: [Click Here](https://github.com/sripranav9/IntroductionToInteractiveMedia/edit/main/finalProject/journal.md#date-21st-april-2022)
 
