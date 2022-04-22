@@ -38,4 +38,6 @@ But since the car needs to be free from the connection from the laptop, we would
 - To sum up, the arduino wouldn't be sending in any signals to p5, but the p5 sends in signals for certain functions to be performed which are to be received by the Arduino using radio communiation.
 - Ways of implementing the radio module and determining the input pins exactly are yet to be explored.
 
+Additional concepts and thoughts that will be possibly added as the project gets under way: A blinking Red LED and the use of peirco buzzer to indicate the proximity to obstacle.
+
 Final Group: [Ayesha](https://github.com/ayeshaahmed13/IntroToIM) and Pranav
