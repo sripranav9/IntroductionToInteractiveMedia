@@ -40,3 +40,32 @@ Additional concepts and thoughts that will be possibly added as the project gets
 
 Final Group: [Ayesha](https://github.com/ayeshaahmed13/IntroToIM) and Pranav
 
+### Date: 25th April 2022
+
+We visited the IM Lab today and largely worked out on the more hands-on component of our project. Till date we had been referencing various materials and examples on YouTube to gain more transparency on the radio transmission aspect and on how to make our RoboPet more unique.  The biggest milestone for our project was that we got a large part of circuitry in place in addition to the p5.js component of our project that deals with gathering user input.
+
+#### Accomplishments during each work session:
+**Work Session on 24th April**
+- We have figured out the pins practically by connecting the wires, the motor driver, and the motors themselves.
+- We took the help of some examples from SparkFun Documentation, and changed the code to make use of the distance sensor and specifically in a way we wanted the RoboPet to move like. 
+**Work Session on 25th April**
+- We have a working model of a RoboPet for the "Free Move" function as discussed above. (Free move is basically when the RoboPet is left to wander on its own, and when it senses an obstacle, it reverses and turns to another direction to proceed forward)
+
+#### What worked and what didn't work: 
+- On the positive note, the robot can now freely move and when obstacles are found, it does the expect reverse and turn function. 
+- Since we were able to effectively run the expected aspect of the project effectively, our next plan of action would be to perhaps try to inculcate more aspects into our robot to make it  more unique.
+- The aspect that largely didn’t work for us was the radio transmission part which we were unable to proceed to due to the unavailability of many female to female or female to male wires in the IM lab.
+- The arduino and the breadboard weren't sitting on the black sparkFun board properly so we had to use a tape for temporary purpose.
+
+#### What changes we made to the design as a result of things that didn't work:
+- We don't think the robot will be able to return to HOME (the main arduino connected to the laptop), this looks like its way too far-fetched, to trace the path it had gone, and retrace it back to come back to the same position. We're not sure if the radio module itself can communicate a path for the RoboPet to retrace. 
+
+#### Most riskiest, complicated, or unknown part, and how we plan to solve it:
+- The most unknown part for us so far is to get the Radio module to work. Owing to the issues mentioned below, we couldn't work on the radio module yet.
+- We are yet to get to the p5.js fully as it is, but this is not something unknown to us, we are aware of how the p5 serial works and focussed only on the Arduino part of the RoboPet for now. We are ready with the basic of part of p5 that connected Arduino, and p5 using p5.Serial. We will add the above mentioned functions to p5 once we have a chance to do so. When the user sends a signal on p5 (Eg: Free Roam or make a circle etc.), the signal is taken by the serial and finally on Arduino which can pass this command to the RoboPet using the radio module. Since radio module itself is something we need help on, we will get to this as soon as radio module is fixed. 
+
+#### Arduino, p5, Fabrication, and construction issues:
+- It's always takes a long time to debug a tiny error in the code, it took us a day to figure out what went wrong with the code and the robot was just not moving. But the problem was the switch we were using. In the three legged switch we were using, the two legs on the left (middle leg and left most) are connected, and the two legs on the right (middle leg and right most) are connected. Which means, there is no connection between the right-most and the left-most legs. I connected the ground and a wire to a arduino pin using these two pins and then assumed the switch wasn't working (as I tried without the switch and it was working fine). I just had to use the switch correctly! This problem did take a lot of time to solve but during this process, we learnt how to use the Multimeter with Jack, and many more stuff about these switches. Thanks to Jack!
+- We found it extremely difficult to find Male to Female or Female to Female wires for our use in the project (for radio modules). We still couldn't get out hands on them, which did not let us work with the nRF24L01 modules.
+- We found it also hard to screw the arduino board and the breadboard to SparkFun black board which can act as a sturdy material for the car. 
+- We could not find AA Batteries for the car to work on it's own. So it had to be connected to a power source always. Thanks to Abdullah and Mishel, they suggested us to use a power bank instead of carrying the laptop around, which made our work a little easier while testing.
