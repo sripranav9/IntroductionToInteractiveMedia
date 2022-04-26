@@ -48,6 +48,7 @@ We visited the IM Lab today and largely worked out on the more hands-on componen
 **Work Session on 24th April**
 - We have figured out the pins practically by connecting the wires, the motor driver, and the motors themselves.
 - We took the help of some examples from SparkFun Documentation, and changed the code to make use of the distance sensor and specifically in a way we wanted the RoboPet to move like. 
+
 **Work Session on 25th April**
 - We have a working model of a RoboPet for the "Free Move" function as discussed above. (Free move is basically when the RoboPet is left to wander on its own, and when it senses an obstacle, it reverses and turns to another direction to proceed forward)
 
