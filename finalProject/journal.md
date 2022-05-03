@@ -74,12 +74,17 @@ We visited the IM Lab today and largely worked out on the more hands-on componen
 ### Date: 29th April 2022:
 #### Problems:
 
+Power Differential:
 - We ran into a problem where there is a significant power differential between the motors of the two wheels: 
 
 https://user-images.githubusercontent.com/92122776/166442326-d8846253-25d3-471a-8b67-c2acdebf4903.mov
 
 
+Construction Challenges:
 - We also wanted to make the wheels with motors the back wheels and the wheels with no motor and just an axle (that go with the motion and do not have the control to change the motion) will be in the front, so that it can be a 2WD car - where two rear wheels have the power from the engine mainly (in this case the battery pack or any other power source). 
   - During this process, it was very hard to find a tool to fix both the wheels together, and then finally we could find a wood stick that could hold the wheels together, and we glued them using a hot glue gun. 
   -  Now the problem is - How do we fix this wheel with the wooden axle, at the bottom so that the wheel still can move with motion?
   -  We're still figuring out a way to do this. 
+  
+Radio Challenge: 
+- We could build the circuit for the nRF24L01 module but when we are testing, it just prints ````radio initialization failed```` on the Arduino Serial Monitor. 
