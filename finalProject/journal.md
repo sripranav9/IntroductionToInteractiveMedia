@@ -72,6 +72,8 @@ We visited the IM Lab today and largely worked out on the more hands-on componen
 - We could not find AA Batteries for the car to work on it's own. So it had to be connected to a power source always. Thanks to Abdullah and Mishel, they suggested us to use a power bank instead of carrying the laptop around, which made our work a little easier while testing.
 
 ### Date: 29th April 2022:
+#### Problems:
+
 - We ran into a problem where there is a significant power differential between the motors of the two wheels: 
 
 https://user-images.githubusercontent.com/92122776/166442326-d8846253-25d3-471a-8b67-c2acdebf4903.mov
