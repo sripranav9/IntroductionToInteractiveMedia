@@ -88,3 +88,22 @@ Construction Challenges:
   
 Radio Challenge: 
 - We could build the circuit for the nRF24L01 module but when we are testing, it just prints ````radio initialization failed```` on the Arduino Serial Monitor. 
+
+### Date: 7th May 2022:
+
+#### Problems and Solutions:
+- Adding on to the power differential problem described earlier, turns out it is merely a problem of friction and light-weighted body on the front wheel, and a significant weight of the battery pack at the back. It basically needed a supporting addition of the motion at the back as well. 
+- So we planned on gluing two wheels with an axle of appropriate size and width. It was a very difficult process to find such material first of all, however, we found a stick in the recycle bin and we used a got glue gun to stick the wheels together.
+<img src="https://user-images.githubusercontent.com/92122776/167483391-11039c3f-5093-4b7d-a4ee-0d578d597f57.jpeg" width=45% height=45% >
+- But now the problem is how do we fix this to the body of the car so that it can freely move without any friction. 
+- We brainstormed several ideas like having a type of an axle holder attached to the body of the RoboPet. 
+- Meanwhile, Prof. Shiloh has given us the best type of wheel we could ever get that solves all our problems and can directly stick to the body of the RoboPet. 
+<img src="https://user-images.githubusercontent.com/92122776/167484076-b97ddd74-993b-491f-9554-5d679db7bddf.jpeg" width=45% height=45% >
+- This solved all our problems related to the motion and now we just had to improvise the arduino code for the RoboPet to work efficiently and in the best way possible making use of the space it has between itself and the obstacle. 
+
+#### Other essential things to make note of:
+- We intitally began by testing the RoboPet with the distance sensor situation at the right. Although it was random, and we were planning to change the sensor to the middle as we progress, upon testing we realized that the sensor being on the right helps us a lot. 
+- The RoboPet has a slight dominance on the left wheel due to which the car tends to move slightly towards the right, so the sensor being situated on the right can detect the obstacle imediately since the right most wheel is what hits the obstacle if the sensor isn't in its place as it is now. the image below is an illustration of how the RoboPet detects obstacles easily when turning right, when the distance sensor is on the right. 
+
+<img src="https://user-images.githubusercontent.com/92122776/167483182-b745dff6-7949-491e-b4bb-6ccfac19b5bc.png" width=60% height=60% >
+
