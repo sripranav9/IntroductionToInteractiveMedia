@@ -124,6 +124,7 @@ Radio Challenge:
 - After shifting the pins, we tested each of the sensors and modules: Distance Sensor, Motor Driver, and the Radio Module (receiver) separately and it works just fine.
 
 A video of the nRF24L01 Modules in work:
+
 https://user-images.githubusercontent.com/92122776/167583908-99084983-7281-4020-a8d1-d66bdccf4357.mov
 
 - Now we need to integrate this separately tested Radio Module code to the code consisting the Motor Driver and the Distance sensor.
