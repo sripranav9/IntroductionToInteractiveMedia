@@ -114,3 +114,27 @@ Radio Challenge:
 #### Problems:
 - When the motors are running on their top speed, since the wheels do not have enough friction, they keep rotating at the same position without moving forward. This is mainly because there is not enough weight to increase the down force on the wheels to actually start moving even at higher speeds. 
 - We are yet to solve this problem, we will explore all the different ways to solve this and add the weight, or reduce the motor speed.
+
+### Date: 9th May 2022:
+#### Progress:
+- The radio modules are now working as expected after running the code of Prof.Shiloh's minimalRadio example. We could also find the feed through headers to make use of the breadboard for the radio module. 
+- Initially the radio prints ````radio initialization failed```` on the Serial Monitor. For some reason, taking out and placing back the radio in its place works everytime.
+- Now the main challenge is to integrate this radio module, mainly the 'Receiver' out of the two separate Arduino Unos to the Arduino Uno that already runs the motors and the distance sensor. 
+- But the radio pins, require specific digital pins that use a specific and particular hardware system that is used by these radio pins specially i.e pins: ````13, 12, 11, 10````, are required solely by the radio. So we had to change the connections and pins of the rest of the already connected pins of Motor Driver and the Distance Sensor and use the Analog pins instead which can work just like the digital pins.
+- After shifting the pins, we tested each of the sensors and modules: Distance Sensor, Motor Driver, and the Radio Module (receiver) separately and it works just fine.
+
+A video of the nRF24L01 Modules in work:
+https://user-images.githubusercontent.com/92122776/167583908-99084983-7281-4020-a8d1-d66bdccf4357.mov
+
+- Now we need to integrate this separately tested Radio Module code to the code consisting the Motor Driver and the Distance sensor.
+
+#### Problems and Solutions:
+- The left motor all of a sudden wasn't working as it should. So I tried to debug the problem by removing everything and just having two statements in the ````loop()```` function to test if they are actually faulty. 
+
+````
+void loop() {
+  leftMotor(255);
+  rightMotor(255);
+}
+````
+- Turns out the problem actually was very simple and silly: The Motor Driver was not in its place correctly. We just needed to push it firmly into its place and everything began working as it should.
