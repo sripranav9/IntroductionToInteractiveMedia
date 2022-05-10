@@ -123,6 +123,8 @@ Radio Challenge:
 - But the radio pins, require specific digital pins that use a specific and particular hardware system that is used by these radio pins specially i.e pins: ````13, 12, 11, 10````, are required solely by the radio. So we had to change the connections and pins of the rest of the already connected pins of Motor Driver and the Distance Sensor and use the Analog pins instead which can work just like the digital pins.
 - After shifting the pins, we tested each of the sensors and modules: Distance Sensor, Motor Driver, and the Radio Module (receiver) separately and it works just fine.
 
+Resource of Prof. Michael Shiloh that really helped us: [nRF24L01](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/nRF24L01)
+
 A video of the nRF24L01 Modules in work:
 
 https://user-images.githubusercontent.com/92122776/167583908-99084983-7281-4020-a8d1-d66bdccf4357.mov
