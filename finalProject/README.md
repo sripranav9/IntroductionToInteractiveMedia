@@ -32,7 +32,7 @@ Here is an illustration displaying the above:
       and the ````radio.startListening()```` function which sets this module as the receiver. 
     
   - Distance Sensor: Calculate the distance using a formula found in sparkFun examples
-    - We used the code from a [sparkFun example](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5c-autonomous-  robot) to calculate the distance (in inches) for the distance sensor:
+    - We used the code from a [sparkFun example](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5c-autonomous-robot) to calculate the distance (in inches) for the distance sensor:
       ````
       //RETURNS THE DISTANCE MEASURED BY THE HC-SR04 DISTANCE SENSOR
       float getDistance()
