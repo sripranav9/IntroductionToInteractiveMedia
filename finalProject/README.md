@@ -148,7 +148,7 @@ function draw() {
 ### Schematic:
 **Arduino integrated with RoboPet:**
 
-<img src="https://user-images.githubusercontent.com/92122776/167962837-ad60eb6c-6191-4db8-99ae-c46f8f184e77.jpeg" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/92122776/167962837-ad60eb6c-6191-4db8-99ae-c46f8f184e77.jpeg" width=90% height=90%>
 
 For the second arduino, the circuit only consists of a Radio Module. It can be referred from the previous schematic with the following changes:
 ````
