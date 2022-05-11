@@ -144,3 +144,9 @@ So we planned on gluing two wheels with an axle of appropriate size and width. I
 - Once the radio communication worked fine with two other arduinos other than the one intregrated with RoboPet, the challenge was to integrate the code of radio (receiver), and the RoboPet. While we were figuring this out, we assumed the circuitry would be simple and we could use the analog pins for the ````digitalWrite()```` function as well.
 
   However, the main problem occured when we tested and this did not work. Upon research about this, we came to know that there are specific pins i.e pins 13, 12, 11, 10 that have the specific hardware supported to communicate with the Radio module. Hence, we changed the circuitry a little in terms of pin numbers. Global variables came to our rescue again! Declaring the variables globally with the relavant comments had us required to change the pin numbers only at one place each. This has made our work a lot easier, even though its a tiny thing to consider. 
+  
+### References and Acknowledgements:
+- We sincerely thank Professor Michael Shiloh for his constant help and guidance throughout. We got a chance to learn about the nRF24L01 module which we woundn't have had accesss to otherwise. And thanks for your resources that helped us get started with the radio.
+  Resource for Radio Module (nRF24L01) can here found [here](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/nRF24L01)
+- Special thanks to the IM lab staff for lending the equipment in timely manner, helping us with the code when we are stuck, and providing us a wonderful place to work in.
+- SparkFun Example used for distance sensor and some parts of the functions can be found [here](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5c-autonomous-robot)
