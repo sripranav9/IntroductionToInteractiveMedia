@@ -25,5 +25,33 @@ Here is an illustration displaying the above:
 
 User testing has been one of most essential processes in this project, both to make RoboPet much better, and also understand the needs of varied kinds of users.
 
-- When the RoboPet detects an obstacle, it drives back, waits, and takes a turn and continues forward. But due to the power differential intitally, the RoboPet moves right immediately, increasing the chances of detecting an obstacle again. As one of the users pointed out, the suggestion was to increase the turning time and move forward for a certain time before at a low speed before reaching a very high speed immediately. This was a very good suggestion and we've implemented this immediately.
+- The processes of RoboPet after detecting the obstacle as mentioned above include: backing up, and turning left to continue moving forward. There was not enough time for the RoboPet to actually back up and turn, hence it is almost running back into the same obstacle. To resolve this, we increased the values of the following parameters:
+
+````
+//robot delay behaviour variables
+int backupTime = 1000;           //time robot takes to reverse after sensing an obstacle
+int turnTime = 400;             //time the robot takes to turn after reversing back after sensing an obstacle
+int stopTime = 500;             //time the robot stops and has no motion 
+````
+
+- Furthermore, when the RoboPet detects an obstacle, it drives back, waits, and takes a turn and continues forward. But due to the power differential intitally, the RoboPet moves right immediately, increasing the chances of detecting an obstacle again. As one of the users pointed out, the suggestion was to increase the turning time and move forward for a certain time before at a low speed before reaching a very high speed immediately. This was a very good suggestion and we've implemented this immediately.
 - Sometimes, the left motor was not as powerful as the right motor even though the speeds were the same in the code. Although we assumed that to be the power differential, it is a silly error of not inserting the motor driver firmly into the breadboard. The motors now work in an excellent manner.
+- As we are testing p5.js specifically, the p5.js shows the mode that is being transmitted by the radio connected to the laptop, to the arduino running the RoboPet. In this process, we have received some feedback asking us to do something else that strikingly suggests that a change has been made in the mode instead of just printing the changing numbers. So we decided to change the background color based on the modes of the RoboPet. Currently we have two modes. So, to implement this, we had to alter our code just slightly, by involving the use of global variables for the rgb colors of the ````background()```` function. 
+
+````
+function draw() {
+  //outByte is the data being sent by p5.js to Arduino (1 or 2)
+  if (outByte == 1) { 
+    red = 204;
+    green = 255;
+    blue = 255;
+  } else if (outByte == 2) {
+    red = 207;
+    green = 159;
+    blue = 255;
+  }
+  background(red, green, blue);
+//more code continues
+}
+````
+
