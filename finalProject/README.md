@@ -8,7 +8,7 @@
 
 RoboPet is an autonomous robot that can make decisions of its movement and motion based on an obstacle at a certain distance. 
 The user will be able to select different modes i.e Free Roam, Do a circle, e.t.c. The robot runs on a battery backup and can be switched off and on using
-a switch on the robot. The user can control the modes of the robot using a laptop or a PC running the p5 sketch. 
+a switch on the robot. The user can control the modes of the robot using a laptop or a PC running the p5 sketch and connected to Arduino using p5.Serial
 
 ### Overview of Arduino and p5.js circuitry and code:
 
