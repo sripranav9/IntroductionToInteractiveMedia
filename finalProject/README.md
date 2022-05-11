@@ -2,7 +2,7 @@
 ## Final Project | Introduction to Interactive Media
 ### Group Members: Ayesha Ahmed and Sri Pranav Srivatsavai
 
-//image
+<img src="https://user-images.githubusercontent.com/92122776/167780514-461bb62c-6ba4-4795-b7d9-ff788ee8a1c5.jpeg" width=60% height=60%>
 
 ### Description: 
 
