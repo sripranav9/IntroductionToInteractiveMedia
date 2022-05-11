@@ -21,6 +21,79 @@ Here is an illustration displaying the above:
 
 <img src="https://user-images.githubusercontent.com/92122776/167821744-2363515e-6a80-46dd-aca3-4c8443e18d64.png" width=75% height=75%>
 
+**Arduino associated with the RoboPet:**
+- This Arduino contains all the necessary code for:
+  - Radio Module (Receiver) - nRF24L01 Module: Detect the signals sent by the transmitter  
+    - The address must be the same for both the receiver and the transmitter to communicate properly.
+      ````
+      const byte address[6] = "00030"; //this must be the same for both the receiver and the transmitter to communicate appropriately
+      ````
+    - Besides other functions of the module, the main ones are where we check the working of radio using the ````radio.Begin()```` function 
+      and the ````radio.startListening()```` function which sets this module as the receiver. 
+    
+  - Distance Sensor: Calculate the distance using a formula found in sparkFun examples
+    - We used the code from a [sparkFun example](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v40/circuit-5c-autonomous-  robot) to calculate the distance (in inches) for the distance sensor:
+      ````
+      //RETURNS THE DISTANCE MEASURED BY THE HC-SR04 DISTANCE SENSOR
+      float getDistance()
+      {
+        float echoTime;                   //variable to store the time it takes for a ping to bounce off an object
+        float calculatedDistance;         //variable to store the distance calculated from the echo time
+
+        //send out an ultrasonic pulse that's 10ms long
+        digitalWrite(trigPin, HIGH);
+        delayMicroseconds(10);
+        digitalWrite(trigPin, LOW);
+
+        echoTime = pulseIn(echoPin, HIGH);      //use the pulsein command to see how long it takes for the
+                                                //pulse to bounce back to the sensor
+
+        calculatedDistance = echoTime / 148.0;  //calculate the distance of the object that reflected the pulse (half the bounce time multiplied by the     
+                                                // speed of sound)
+
+        return calculatedDistance;              //send back the distance that was calculated
+      }
+      ````
+
+  - Motor Driver: Functions for left and right motors, sequence of steps for each Mode (Free roam or Do a Cricle)
+    - The code for the motor driver mainly consists of the ````LeftRotate(int motorSpeed)```` and ````rightRotate(int motorSpeed)```` functions for the left and right wheels.
+    - If the motorSpeed is positive, the RoboPet moves forward, and backwards otherwise. When it's '0' - it basically stops and there is no motion.
+    - To ensure the forward and reverse rotation of the wheels as expected, we set the pin to HIGH and LOW accordingly. For eg. for the left motor, if the RoboPet must move forward:
+      ````
+      if (motorSpeed > 0)         //if the motor should drive forward (positive speed)
+      {
+        digitalWrite(BIN1, HIGH); //set pin 1 to high
+        digitalWrite(BIN2, LOW);  //set pin 2 to low
+      }
+      ````
+      and to move backwards:
+      ````
+      if (motorSpeed > 0)         //if the motor should drive forward (positive speed)
+      {
+        digitalWrite(BIN1, LOW); //set pin 1 to high
+        digitalWrite(BIN2, HIGH);  //set pin 2 to low
+      }
+      ````
+      and to stop the rotation on both wheels:
+      ````
+      if (motorSpeed > 0)         //if the motor should drive forward (positive speed)
+      {
+        digitalWrite(BIN1, LOW); //set pin 1 to high
+        digitalWrite(BIN2, LOW);  //set pin 2 to low
+      }
+      ````
+      
+ 
+**Arduino connected to the laptop that transmits signals using the Radio Module :**
+- This Arduino contains all the necessary code for:
+  - Radio Module (Transmitter) - nRF24L01 Module: Send the signals received from p5.js (using p5.serialcontrol) to the receiver.
+    - The address must be the same for both the receiver and the transmitter to communicate properly. 
+      ````
+      const byte address[6] = "00030"; //this must be the same for both the receiver and the transmitter to communicate appropriately
+      ````
+    - Besides other functions of the module, the main ones are where we check the working of radio using the ````radio.Begin()```` function 
+      and the ````radio.stopListening()```` function which sets this module as the transmitter. 
+  
 ### Overview of User Testing and changes made:
 
 User testing has been one of most essential processes in this project, both to make RoboPet much better, and also understand the needs of varied kinds of users.
