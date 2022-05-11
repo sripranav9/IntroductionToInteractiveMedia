@@ -141,3 +141,23 @@ void loop() {
 }
 ````
 - Turns out the problem actually was very simple and silly: The Motor Driver was not in its place correctly. We just needed to push it firmly into its place and everything began working as it should.
+
+### Date: 11th May 2022:
+- As we were testing p5.js specifically, the p5.js shows the mode that is being transmitted by the radio connected to the laptop, to the arduino running the RoboPet. In this process, we have received some feedback asking us to do something else that strikingly suggests that a change has been made in the mode instead of just printing the changing numbers. So we decided to change the background color based on the modes of the RoboPet. Currently we have two modes. So, to implement this, we had to alter our code just slightly, by involving the use of global variables for the rgb colors of the ````background()```` function. 
+
+````
+function draw() {
+  //outByte is the data being sent by p5.js to Arduino (1 or 2)
+  if (outByte == 1) { 
+    red = 204;
+    green = 255;
+    blue = 255;
+  } else if (outByte == 2) {
+    red = 207;
+    green = 159;
+    blue = 255;
+  }
+  background(red, green, blue);
+//more code continues
+}
+````
