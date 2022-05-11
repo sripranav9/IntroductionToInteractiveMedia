@@ -55,3 +55,19 @@ function draw() {
 }
 ````
 
+### Problems faced:
+
+- One of the most time-consuming challenges we had was one that had to do the significant power differential between the two motors, we tried everything in the code to restrict the high speed of on wheel over the other. But turns out it was just a problem of fixing the motor driver firmly, and another element of friction below:
+
+  Adding on to the power differential problem described earlier, turns out it is merely a problem of friction and light-weighted body on the front wheel, and a significant weight of the battery pack at the back. It basically needed a supporting addition of the motion at the back as well.
+So we planned on gluing two wheels with an axle of appropriate size and width. It was a very difficult process to find such material first of all, however, we found a stick in the recycle bin and we used a got glue gun to stick the wheels together.
+
+  While we were brainstorming ways to attach an axle to the car for the wheel to move freely, Prof. Shiloh has given us the best type of wheel we could ever get that solves all our problems and can directly stick to the body of the RoboPet without any other holders required.
+  
+   <img src="https://user-images.githubusercontent.com/92122776/167483391-11039c3f-5093-4b7d-a4ee-0d578d597f57.jpeg" width=30% height=30% >
+   <img src="https://user-images.githubusercontent.com/92122776/167484076-b97ddd74-993b-491f-9554-5d679db7bddf.jpeg" width=30% height=30% >
+
+- Another problem that took a lot of time to debug had to do with the radio communication. We did not know if it was the wires, or the radio modules, or the circuitry that was causing the problem. So we tested all of them individually to see how and if they work. The solution to this problem was the radio which was working fine until then on another arduino working as a receiver.
+- Once the radio communication worked fine with two other arduinos other than the one intregrated with RoboPet, the challenge was to integrate the code of radio (receiver), and the RoboPet. While we were figuring this out, we assumed the circuitry would be simple and we could use the analog pins for the ````digitalWrite()```` function as well.
+
+  However, the main problem occured when we tested and this did not work. Upon research about this, we came to know that there are specific pins i.e pins 13, 12, 11, 10 that have the specific hardware supported to communicate with the Radio module. Hence, we changed the circuitry a little in terms of pin numbers. Global variables came to our rescue again! Declaring the variables globally with the relavant comments had us required to change the pin numbers only at one place each. This has made our work a lot easier, even though its a tiny thing to consider. 
