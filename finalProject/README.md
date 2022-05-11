@@ -145,6 +145,37 @@ function draw() {
 }
 ````
 
+### Schematic:
+**Arduino integrated with RoboPet:**
+
+<img src="https://user-images.githubusercontent.com/92122776/167962837-ad60eb6c-6191-4db8-99ae-c46f8f184e77.jpeg" width=60% height=60%>
+
+For the second arduino, the circuit only consists of a Radio Module. It can be referred from the previous schematic with the following changes:
+````
+//Pins for Receiver: (Arduino 1)
+// nRF 24L01 pin    Arduino pin   name
+//          1                     GND
+//          2                     3.3V
+//          3             A0       CE
+//          4             A1      CSN
+//          5             13      SCLK
+//          6             11      MOSI/COPI
+//          7             12      MISO/CIPO
+
+//Pins for Transmitter: (Arduino 2)
+// nRF 24L01 pin    Arduino pin   name
+//          1                     GND
+//          2                     3.3V
+//          3             9       CE
+//          4             10      CSN
+//          5             13      SCLK
+//          6             11      MOSI/COPI
+//          7             12      MISO/CIPO
+
+````
+
+
+
 ### Problems faced:
 
 - One of the most time-consuming challenges we had was one that had to do the significant power differential between the two motors, we tried everything in the code to restrict the high speed of on wheel over the other. But turns out it was just a problem of fixing the motor driver firmly, and another element of friction below:
