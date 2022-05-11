@@ -1,5 +1,6 @@
 # RoboPet
 ## Final Project | Introduction to Interactive Media
+### Group Members: Ayesha Ahmed and Sri Pranav Srivatsavai
 
 //image
 
