@@ -120,7 +120,7 @@ Radio Challenge:
 - The radio modules are now working as expected after running the code of Prof.Shiloh's minimalRadio example. We could also find the feed through headers to make use of the breadboard for the radio module. 
 - Initially the radio prints ````radio initialization failed```` on the Serial Monitor. For some reason, taking out and placing back the radio in its place works everytime.
 - Now the main challenge is to integrate this radio module, mainly the 'Receiver' out of the two separate Arduino Unos to the Arduino Uno that already runs the motors and the distance sensor. 
-- But the radio pins, require specific digital pins that use a specific and particular hardware system that is used by these radio pins specially i.e pins: ````13, 12, 11, 10````, are required solely by the radio. So we had to change the connections and pins of the rest of the already connected pins of Motor Driver and the Distance Sensor and use the Analog pins instead which can work just like the digital pins.
+- But the radio pins, require specific digital pins that use a specific and particular hardware system that is used by these radio pins specially i.e pins: 13, 12, 11, 10, are required solely by the radio. So we had to change the connections and pins of the rest of the already connected pins of Motor Driver and the Distance Sensor and use the Analog pins instead which can work just like the digital pins.
 - After shifting the pins, we tested each of the sensors and modules: Distance Sensor, Motor Driver, and the Radio Module (receiver) separately and it works just fine.
 
 Resource of Prof. Michael Shiloh that really helped us: [nRF24L01](https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/nRF24L01)
