@@ -71,6 +71,23 @@ We visited the IM Lab today and largely worked out on the more hands-on componen
 - We found it also hard to screw the arduino board and the breadboard to SparkFun black board which can act as a sturdy material for the car. 
 - We could not find AA Batteries for the car to work on it's own. So it had to be connected to a power source always. Thanks to Abdullah and Mishel, they suggested us to use a power bank instead of carrying the laptop around, which made our work a little easier while testing.
 
+### Date: 26th April 2022:
+#### Basic User Testing:
+
+User testing has been one of most essential processes in this project, both to make RoboPet much better, and also understand the needs of varied kinds of users.
+
+- The processes of RoboPet after detecting the obstacle as mentioned above include: backing up, and turning left to continue moving forward. There was not enough time for the RoboPet to actually back up and turn, hence it is almost running back into the same obstacle. To resolve this, we increased the values of the following parameters:
+
+````
+//robot delay behaviour variables
+int backupTime = 1000;           //time robot takes to reverse after sensing an obstacle
+int turnTime = 400;             //time the robot takes to turn after reversing back after sensing an obstacle
+int stopTime = 500;             //time the robot stops and has no motion 
+````
+- Furthermore, when the RoboPet detects an obstacle, it drives back, waits, and takes a turn and continues forward. But due to the power differential intitally, the RoboPet moves right immediately, increasing the chances of detecting an obstacle again. As one of the users pointed out, the suggestion was to increase the turning time and move forward for a certain time before at a low speed before reaching a very high speed immediately. This was a very good suggestion and we've implemented this immediately.
+
+We could not upload the video of the user's feedback as they preferred not to be done so. We are doing a Phase II user testing soon and feedback will be updated again.
+
 ### Date: 29th April 2022:
 #### Problems:
 
@@ -142,7 +159,8 @@ void loop() {
 ````
 - Turns out the problem actually was very simple and silly: The Motor Driver was not in its place correctly. We just needed to push it firmly into its place and everything began working as it should.
 
-### Date: 11th May 2022:
+
+### Date: 10th-11th May 2022:
 - As we were testing p5.js specifically, the p5.js shows the mode that is being transmitted by the radio connected to the laptop, to the arduino running the RoboPet. In this process, we have received some feedback asking us to do something else that strikingly suggests that a change has been made in the mode instead of just printing the changing numbers. So we decided to change the background color based on the modes of the RoboPet. Currently we have two modes. So, to implement this, we had to alter our code just slightly, by involving the use of global variables for the rgb colors of the ````background()```` function. 
 
 ````
@@ -161,3 +179,34 @@ function draw() {
 //more code continues
 }
 ````
+
+#### User Testing Phase II:
+
+User testing has been one of most essential processes in this project, both to make RoboPet much better, and also understand the needs of varied kinds of users.
+
+- Sometimes, the left motor was not as powerful as the right motor even though the speeds were the same in the code. Although we assumed that to be the power differential, it is a silly error of not inserting the motor driver firmly into the breadboard. The motors now work in an excellent manner.
+- As we were testing p5.js specifically, the p5.js shows the mode that is being transmitted by the radio connected to the laptop, to the arduino running the RoboPet. In this process, we have received some feedback asking us to do something else that strikingly suggests that a change has been made in the mode instead of just printing the changing numbers. So we decided to change the background color based on the modes of the RoboPet. Currently we have three modes. So, to implement this, we had to alter our code just slightly, by involving the use of global variables for the rgb colors of the ````background()```` function. 
+
+````
+function draw() {
+  //outByte is the data being sent by p5.js to Arduino (1 or 2)
+  if (outByte == 1) { 
+    red = 204;
+    green = 255;
+    blue = 255;
+  } else if (outByte == 2) {
+    red = 207;
+    green = 159;
+    blue = 255;
+  }
+  background(red, green, blue);
+//more code continues
+}
+````
+- Upon user testing, we also received feedback to let the user be able to stop the car using a number key as well, instead of just the switch. This is mainly because the user had to run behind the RoboPet and hold it to switch it off. So for a better user experience, we added another key '0' for which the robot will stop moving even if the switch is on. The users loved this!
+
+### Date: 12th May 2022:
+Have a working model of the project:
+
+https://user-images.githubusercontent.com/92122776/168003086-9d4db0ab-6f1a-4061-b402-a12f43af595b.mov
+
