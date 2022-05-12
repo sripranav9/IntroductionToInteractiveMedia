@@ -175,6 +175,14 @@ For the second arduino, the circuit only consists of a Radio Module. It can be r
 
 ````
 
+### Final Working Model:
+
+https://user-images.githubusercontent.com/92122776/168001059-88e5310e-2297-4e95-9f23-b6194f2031b5.mov
+
+
+### Scope for Improvising:
+- We can add many more functions for different number commands and make the robot perform many more functions.
+- We can also imclude 2-3 more distance sensors for better accuracy in obstacle detection.
 
 
 ### Problems faced:
