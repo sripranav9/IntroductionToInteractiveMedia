@@ -86,7 +86,7 @@ int stopTime = 500;             //time the robot stops and has no motion
 ````
 - Furthermore, when the RoboPet detects an obstacle, it drives back, waits, and takes a turn and continues forward. But due to the power differential intitally, the RoboPet moves right immediately, increasing the chances of detecting an obstacle again. As one of the users pointed out, the suggestion was to increase the turning time and move forward for a certain time before at a low speed before reaching a very high speed immediately. This was a very good suggestion and we've implemented this immediately.
 
-We could not upload the video of the user's feedback as they preferred not to be done so. We are doing a Phase II user testing soon and feedback will be updated again.
+We could not upload the video of the user's feedback as they preferred their video not be published on a public portfolio. We are doing a Phase II user testing soon and feedback will be updated again.
 
 ### Date: 29th April 2022:
 #### Problems:
