@@ -4,9 +4,8 @@
 
 <img src="https://user-images.githubusercontent.com/92122776/167780514-461bb62c-6ba4-4795-b7d9-ff788ee8a1c5.jpeg" width=60% height=60%>
 
-[RoboPet](https://editor.p5js.org/sri.pranav/sketches/9obVqqWQu) is an autonomous robot that can make decisions of its movement and motion based on an obstacle at a certain distance. 
-The user will be able to select different modes i.e Free Roam, Do a circle, e.t.c. The robot runs on a battery backup and can be switched off and on using
-a switch on the robot. The user can control the modes of the robot using a laptop or a PC running the p5 sketch and connected to Arduino using p5.Serial
+[RoboPet](https://editor.p5js.org/sri.pranav/sketches/9obVqqWQu) is an autonomous robot inspired from dogs that can make decisions of its movement and motion based on an obstacle at a certain distance. 
+The user will be able to select different modes i.e Free Roam, Do a circle (just like how a dog tries to catch its tail in circles), e.t.c. The robot runs on a battery backup and can be switched on and off using a switch on the robot. The user can control the modes of the robot using a laptop or a PC running the p5 sketch and connected to Arduino using p5.Serial
 
 ### Overview of Arduino and p5.js circuitry and code:
 
