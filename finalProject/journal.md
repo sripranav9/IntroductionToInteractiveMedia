@@ -210,3 +210,7 @@ We have a working model of the project:
 
 https://user-images.githubusercontent.com/92122776/168003086-9d4db0ab-6f1a-4061-b402-a12f43af595b.mov
 
+Ayesha: Responsible for the hardware and p5: Arduino circuitry. Created the majority of the sketch for p5.js serial control and the interface of p5 for RoboPet.
+Pranav: Responsible for code: Arduino - making sure the radios communicate properly, and the sensors print appropriate values, and connection to p5.serial for the transmitter.
+
+Overall, working in a group is very helpful as one runs into a problem and the other is there to debug and help out!
