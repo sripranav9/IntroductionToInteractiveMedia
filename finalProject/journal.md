@@ -206,7 +206,7 @@ function draw() {
 - Upon user testing, we also received feedback to let the user be able to stop the car using a number key as well, instead of just the switch. This is mainly because the user had to run behind the RoboPet and hold it to switch it off. So for a better user experience, we added another key '0' for which the robot will stop moving even if the switch is on. The users loved this!
 
 ### Date: 12th May 2022:
-Have a working model of the project:
+We have a working model of the project:
 
 https://user-images.githubusercontent.com/92122776/168003086-9d4db0ab-6f1a-4061-b402-a12f43af595b.mov
 
