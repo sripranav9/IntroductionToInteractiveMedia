@@ -178,8 +178,14 @@ For the second arduino, the circuit only consists of a Radio Module. It can be r
 
 ### Final Working Model:
 
-https://user-images.githubusercontent.com/92122776/168001059-88e5310e-2297-4e95-9f23-b6194f2031b5.mov
+**Mode 1:**
 
+https://user-images.githubusercontent.com/92122776/168027943-76611bdb-74f3-4e7a-bed5-58a1bc9989c1.mov
+
+
+**Mode 2: and Mode 0:**
+
+https://user-images.githubusercontent.com/92122776/168027973-f92fef32-c443-4336-984c-60c07b471ca2.mov
 
 ### Scope for Improvising:
 - We can add many more functions for different number commands and make the robot perform many more functions.
