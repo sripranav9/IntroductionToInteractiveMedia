@@ -208,6 +208,13 @@ function draw() {
 ### Date: 12th May 2022:
 We have a working model of the project:
 
+Obstacle Sensing Demonstration:
+
+https://user-images.githubusercontent.com/92122776/168236386-876db67f-a590-4fcd-a1f0-4b446b1b653a.mov
+
+
+Final working:
+
 https://user-images.githubusercontent.com/92122776/168003086-9d4db0ab-6f1a-4061-b402-a12f43af595b.mov
 
 **Work Division:**
