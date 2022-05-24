@@ -75,7 +75,7 @@ Here is an illustration displaying the above:
       ````
       and to stop the rotation on both wheels:
       ````
-      if (motorSpeed = 0)         //if the motor should drive forward (positive speed)
+      if (motorSpeed = 0)         //if the motor should stop
       {
         digitalWrite(BIN1, LOW); //set pin 1 to high
         digitalWrite(BIN2, LOW);  //set pin 2 to low
