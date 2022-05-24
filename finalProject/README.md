@@ -67,7 +67,7 @@ Here is an illustration displaying the above:
       ````
       and to move backwards:
       ````
-      if (motorSpeed > 0)         //if the motor should drive forward (positive speed)
+      if (motorSpeed < 0)         //if the motor should drive backwards (positive speed)
       {
         digitalWrite(BIN1, LOW); //set pin 1 to high
         digitalWrite(BIN2, HIGH);  //set pin 2 to low
