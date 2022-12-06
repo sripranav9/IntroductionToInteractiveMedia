@@ -6,7 +6,7 @@
 // Date Created   : Apr-18-2022
 // Date Submitted : May-11-2022
 // Description    : RoboPet - An autonomous robot that can move around freely or
-//                           perform a certain funciton as chosen by the user
+//                           perform a certain function as chosen by the user
 //=====================================================================================================
 
 #include <SPI.h>        // ]
